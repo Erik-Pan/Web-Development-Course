@@ -1,0 +1,31 @@
+h1 {
+    color: #008484;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a, p strong, th {
+    color: red;
+}
+
+span, strong, .naranja {
+    color:orange;
+}
+
+h2, a em, caption {
+    color: blue;
+}
+
+
+td, .verde a {
+    color: #509a1b;
+}
+
+.verde {
+    color: #a6b47a
+}
+
+.verde span {
+    color: fuchsia
+}
+

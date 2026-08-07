@@ -1,0 +1,96 @@
+/* Tanto p como h1 son selectores de tipo o etiqueta */
+/* El selector universal representa a todos los elementos */
+
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p {
+    color: red;  /* Color es la propiedad para cambiar el color de un elemento */
+    font-size: 24px;
+
+    /* Aquí hay colisión, es decir, estamos aplicando la misma propiedad font-famly que hemos aplicado en el selector universal.
+    En caso de colisión:
+    - Hay que mirar nivel de especifidad. Se aplica la regla más específica
+    - Para mismo nivel de especifidad, se aplica la última */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    color: blue;
+    font-size: 50px;
+    /* La propiedad text-transform permite pasar a mayúsculas o minúsculas o capitalizar el texto del elemento */
+    text-transform: uppercase;
+}
+
+/* Selector descendiente: 
+Este selector aplica al elemento de más a la derecha que es descendiente en el orden expresado hacia la izquierda separado por espacios */
+
+p strong{
+    color: green;
+    text-decoration: underline;
+}
+
+strong{
+    color: orange;
+}
+
+strong:hover {
+    font-size: 80px;
+}
+
+/* Para aplicar estilos a un elemento con atributo class, utilizo la notación punto junto con el valor del atributo */
+.especial{
+    font-size: 40px;
+}
+
+/* Para aplicar estilos a un elemento con atributo id, utilizo la almohadilla junto con el valor del atributo */
+#exclusivo{
+    font-size: 60px;
+}
+
+/* Selector descendiente que aplica a los li que son descendientes de ol */
+ol li{
+    /* Propiedad para poner en negrita o quitarla, el valor bold es para negrita */
+    font-weight: bold;
+}
+
+/* Selector descendiente que aplica a los span que son descendientes de li que a su vez son descendientes de ol */
+ol li span{
+    color: pink;
+    font-weight: normal;
+}
+
+a{
+    /* Para aplicar o eliminar subrayado necesito la propiedad text-decoration */
+    text-decoration: none; /* Si quiere subrayar el valor sería entonces underline (mirar p strong, en verde) */
+}
+
+/* Cambiamos el tamaño del texto a 28 píxeles */
+.boton:hover {
+    color: white;
+    background-color: red;
+    border: 10px solid yellow;
+}
+
+strong:hover {
+    font-size: 28px;
+}
+
+/* Podemos distinguir al párrafo denrto de una sección como descendiente y descendiente directo */
+/* Aplicamos color marrón a los descendientes */
+section p {
+    color: brown;
+}
+
+/* Podemos distinguir al párrafo denrto de una sección como descendiente y descendiente directo */
+/* Aplicamos color agua marina al descendiente directo de sección */
+section > p {
+    color: aquamarine
+}
+
+

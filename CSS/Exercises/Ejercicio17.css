@@ -1,0 +1,105 @@
+nav a {
+    color: white; 
+}
+
+p {
+    font-size: 18px;
+}
+
+#contenido {
+    background-color: white;
+}
+
+.correcto {
+    color: green;
+}
+
+h1, h2, h3 {
+    color: blue;
+}
+
+article img {
+    border: 1px solid red;
+}
+
+a {
+    color: red;
+}
+
+.destacado {
+    background-color: yellow;
+}
+
+#cabecera { 
+    background-color: darkblue;
+}
+
+section p {
+    color: blue;
+}
+
+p, ul, ol {
+    font-size: 16px;
+}
+
+#pie {
+    background-color: black;
+    color: white;
+}
+
+img {
+    border: 2px solid black;
+}
+
+footer li {
+    color: grey;
+}
+
+.importante {
+    /* Con font-size podemos poner en cursiva (italic) o quitarla */
+    font-style: italic;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+aside h2 {
+    color: green
+}
+
+img.miniatura {
+    /* La propiedad width para cambiar la anchura de los elementos */
+    /* Si quieremos modificar la altura, lo haríamos con height */
+    width: 150px;
+}
+
+#logo {
+    border: 3px solid green;
+}
+
+a, button {
+    color: white;
+}
+
+img, video {
+    border: 1px solid black;
+}
+
+.importante, .destacado {
+    background-color: yellow;
+}
+
+h1 {
+    color: blue
+}
+
+ul {
+    color: green
+}
+
+#menu {
+    background-color: grey;
+}
+

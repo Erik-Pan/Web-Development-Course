@@ -1,0 +1,55 @@
+div {
+    width: 1200px;
+    height: 800px;
+    background-color: aquamarine;
+    margin: auto;
+}
+
+header {
+    width: 1200px;
+    height: 150px;
+    background-color: blue;
+    float: left;
+}
+
+nav {
+    width: 1200px;
+    height: 50px;
+    background-color: lightgreen;
+    float: left;
+}
+
+main {
+    width: 1000px;
+    height: 500px;
+    background-color: bisque;
+    float: left;
+}
+
+aside {
+    width: 200px;
+    height: 500px;
+    background-color: chocolate;
+    float: left;
+}
+
+footer {
+    width: 1200px;
+    height: 100px;
+    background-color: grey;
+    float: left;
+}
+
+section {
+    width: 476px;
+    height: 476px;
+    background-color: cadetblue;
+    float: left;
+    padding: 1px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+main section:last-child {
+    background-color: chartreuse;
+}

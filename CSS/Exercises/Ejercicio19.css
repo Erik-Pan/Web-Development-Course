@@ -1,0 +1,32 @@
+/* 1. Todos los párrafos */
+p {}
+
+/* 2. El elemento cuyo id es principal */ 
+#princial {}
+
+/* 3. Todos los elementos con la clase activo */
+.activo {}
+
+/* 4. Los enlaces que están dentro de un <nav> */
+nav a {}
+
+/* Descendiente directo */
+nav > ul > li > a {}
+
+/* 5. Los títulos <h2> y <h3> a la vez */
+h2, h3 {}
+
+/* 6. Las imágenes que están dentro de un <article> */
+article img {}
+
+/* 7. Los párrafos que están dentro de un <section> */
+section p {}
+
+/* 8. El elemento con id footer */
+#footer {}
+
+/* 9. Los elementos con clase error */
+.error {}
+
+/* 10. Los botones y los enlaces al mismo tiempo */
+button, a {}

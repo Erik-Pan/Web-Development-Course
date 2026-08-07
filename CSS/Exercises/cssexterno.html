@@ -1,0 +1,56 @@
+<html lang="es">
+    <head>
+        <title>CSS con fichero externo</title>
+        <meta charset="UTF-8">
+        <!-- Para vincuar un documento CSS a este documento HTNL, utilizamos la etiqueta link.
+        Debemos incluir como atributos el tipo de  relación que tiene el documento con rel y valor stylesheet 
+        y el atributo href para indicar el documento CSS -->
+        <link rel="stylesheet" href="cssexterno.css">
+    </head>
+
+    <body>
+        <h1>Título <strong>azul</strong></h1>
+
+        <!-- Quiero hacer de este párrafo un párrafo especial, que tenga estilo diferente al resto -->
+        <!-- Puedo distinguir a un elemento de dos formas:
+        - Con atributo class
+        - Con atributo id -->
+        <p class="especial">Esto es un <strong>párrafo</strong></p>
+        <p id="exclusivo">Esto es otro <strong>párrafo</strong></p>
+        <p class="especial">Esto es otro <a href=""><strong>párrafo</strong></a></p>
+
+        <ul>
+            <li><strong>Hola</strong></li>
+            <li>Adiós</li>
+        </ul>
+
+        <!-- Si quiero aplicar a una o varias palabras de todo un elemento, pero no todas, puedo acotarlas con la etqueta span -->
+        <ol>
+            <li>Primero elemento</li>
+            <li><span>Segundo</span> elemento</li>
+            <li>Tercer elemento</li>
+        </ol>
+
+        <a class="boton" href="">Botón</a>
+
+        <nav>
+            <ul>
+                <li><a href="">Enlace 1</a></li>
+                <li><a href="">Enlace 2</a></li>
+                <li><a href="">Enlace 3</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <p>Párrafo color agua marina</p>
+        </section>
+
+        <section>
+            <div>
+                <p>Párrafo</p>
+            </div>
+        </section>
+
+    </body>
+
+</html>

@@ -1,0 +1,25 @@
+/* Se pueden crear estas dos reglas: */
+/* .aviso, .error, .correcto{
+    padding: 20px;
+    margin-bottom: 25px;
+}  Esta es una */
+div  {
+    padding: 20px;
+    margin-bottom: 25px;
+} /* Esta es la otra, como es general solo con div dejamos esta */
+
+/* p {
+    background-color: bisque
+} */
+
+.error {
+    background-color: tomato;
+}
+
+.correcto {
+    background-color: lightgreen;
+}
+
+.aviso {
+    background-color: lightyellow;
+}

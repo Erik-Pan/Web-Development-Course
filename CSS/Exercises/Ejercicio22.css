@@ -1,0 +1,19 @@
+a {
+    padding: 12px;
+    background-color: blue;
+    color: white;
+}
+
+nav {
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin-top: 25px;
+}
+
+/* Al superponerse los elementos, separamos los li también (no es parte del ejercicio */
+li {
+    margin-bottom: 30px;
+}
+

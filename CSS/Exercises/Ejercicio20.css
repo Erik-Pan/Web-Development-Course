@@ -1,0 +1,51 @@
+/* Elimino márgenes y rellenos por defecto */ 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Todos los párrafos tendrán un margen inferior de 20px */
+/* El texto de los párrafos tendrán un padding de 15px */
+p {
+    margin-bottom: 20px;
+    background-color: bisque;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.imagen {
+    text-align: center;
+}
+
+p:last-child {
+    text-align: center;
+}
+
+/* El título principal tendrá un margen inferior de 40px */
+/* El título tnedrá un padding de 10 px */
+/* El fondo del título será azul y tendrá el texto blanco */
+h1 {
+    margin-bottom: 40px;
+    padding: 10px;
+    background-color: darkblue;
+    color: white;
+}
+
+img {
+    background-color: red;
+    width: 400px;
+}
+
+em {
+    background-color: green;
+}
+
+/* Width y height determinan la anchura y la altura respectivamente de los elementos */
+li {
+    background-color: chocolate;
+    width: 200px;
+    height: 50px;
+}
+
+
+

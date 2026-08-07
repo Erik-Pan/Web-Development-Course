@@ -1,0 +1,30 @@
+article {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 15px;
+}
+
+img {
+    margin-bottom: 15px;
+}
+
+p strong {
+    font-size: 20px;
+}
+
+.oferta {
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+}
+
+.anterior {
+    text-decoration: line-through;
+}

@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Ninguna lista tendrá puntos así que lo hago de forma genérica */
+ul {
+    list-style-type: none;
+}
+
+header {
+    width: 1200px;
+    height: 180px;
+    margin: auto;
+    background-color: bisque;
+}
+
+header > div {
+    width: 1200px;
+    height: 120px;
+    background-color: #0087d6;
+    float: left;
+}
+
+/* El primer hijo div de header */
+header > div:first-child {
+    height: 40px;
+    background-color: #19095c;
+}
+
+header > div:first-child a {
+    color: white;
+    text-decoration: none;
+}
+
+li {
+    float: left;
+}
+
+header > div:first-child img {
+    height: 30px;
+}
+
+/* Las capas address deben estar en horizontal, les damos mitad y mitad de anchura */
+address {
+    width: 600px;
+    float: left;
+}
+
+address:first-child {
+    width: 700px;
+}
+
+header > div:first-child ul {
+    margin-top: 12px;
+}
+
+/* Los iconos de redes sociales tienen que estar alineados a la derecha, así que especifico
+que el addres que es el último del primer hijo de header tenga alineación a la derecha.
+No hace falta indicar que este address es hijo del primer hijo de header, ya que es el único 
+address último hijo que hay en la web */
+address:last-child {
+    text-align: right;
+    width: 500px;
+}
+
+/* Aplicamos estilos a la lista que es descendiente del primer hijo de header. No hay que especificar
+porque existe otra ul que es la del menú de navegación y pertenece a último hijo de header */
+
+/* Sintaxis de padding: 
+   - padding: 20px;   Aquí estoy dando padding a los 4 costados de la misma cantidad, 20px;
+   - padding: 10px 15 px 20 px 25 px;  Empezando por arrba seguimos el orden de las agujas del reloj, 10px arriba (top) 
+   15 px(rigth) 20px abajo (bottom) 25px izquierda (left)
+   - padding: 10px 20px;  Si ponemos dos valores, el primero hace referencia a arriba y abajo y el segundo parámetro 
+   a izquierda y derecha. */
+
+header > div:first-child ul li {
+    width: auto;
+    font-size: 16px;
+    padding-left: 30px;
+    margin-right: 30px;
+    background-size: 19px; /* Ocupe lo que ocupe, le indicamos que tenga este tamaño */
+    background-repeat: no-repeat; /* Si el fondo ocupa menos que su espacio, la imagen se va repetiedo, para evitarlo se lo indicamos*/
+    background-position-x: 5px;
+}
+
+.telefono {
+    background-image: url("../CSS/telefono.logo.png"); /* Indicamos la imagen */
+    
+}
+
+.correo {
+    background-image: url("../CSS/mail.logo.png");
+}
+
+.direccion {
+    background-image: url("../CSS/direccion.icono.png");
+}
+
+/* ***--Estilos para la mitad de abajo--*** */
+
+div > div {
+    width: 100px;
+    height: 120px;
+    float: left;
+}
+
+nav {
+    width: 600px;
+    height: 120px;
+    float: right;
+}
+
+nav li {
+    width: auto;
+    height: 120px;
+    margin-right: 50px;
+    text-transform: uppercase;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    display: block;
+    height: 30px;
+    margin-top: 45px;
+    color: white;
+    text-decoration: none;
+    transition: border 1s ease;
+}
+
+nav a:hover {
+    border-bottom: 1px solid white;
+}

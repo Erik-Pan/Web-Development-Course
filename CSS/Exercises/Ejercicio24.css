@@ -1,0 +1,62 @@
+/* Quitamos con el selector universal todos los márgene y rellenos de TODOS los elementos
+además de darles un tamaño de letras de 20px */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+/* Damos al menú un tamaño de anchura de 1200xp y centramos con respecto
+al navegador con margin: auto así como una altura de 40px */
+nav {
+    width: 1200px;
+    /* background-color: bisque; */
+    margin: auto;
+    height: 40px;
+}
+
+/* Eliminamos los puntos de la lista no enumerada (ul) con list-style-type: none*/
+/* Como los li tienen que estar en horizontal, todos los elementos excepto nav deben tener float: left */
+ul { 
+    list-style-type: none;
+    /* background-color: blue; */
+    float: left;
+    height: 40px;
+}
+
+/* Como tenemos un total de 1200px el total de todos los li más sus rellenos no deben superarlos 1200px */
+li {
+    /* background-color: burlywood; */
+    width: 230px;
+    float: left;
+    height: 40px;
+    text-align: center;
+    margin-right: 12px;
+}
+
+/* Todos los li excepto el último (last-child) tienen margin a la derecha de 12px para hacer el total de 1200px */
+ul li:last-child {
+    margin-right: 0px;
+}
+
+/* Con text-decoration: none eliminamos el subrayado que tienen por defecto los enlaces */
+/* Los elementos de línea no responden a width y height porque ocupan estrictamente lo que ocupa el texto.
+Debemos cambiar su comportamiento, indicando que los enlaces en este caso son bloques */
+a {
+    color: white;
+    text-decoration: none;
+    background-color: darkblue;
+    display: block;
+    width: 230px;
+    height: 33px;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+/* CSS que se aplica al pasar el ratón por encima del elemento, en este caso se mantiene prácticamente todo,
+y solo indicamos lo que cambiar que es el color de fondo y que se vea en negrita */
+a:hover {
+    background-color: darkred;
+    font-weight: bold;
+}
+
