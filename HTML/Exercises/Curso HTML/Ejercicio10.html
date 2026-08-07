@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <title>Rellena tu CV</title>
+        <meta charset = "UTF-8">
+    </head>
+
+    <body>
+        <h1>Rellena tu CV</h1>
+        <form action="Ejercicio10.html" method="GET">
+            <!-- Para formularios que tienen distintos campos en función de grupos, por ejemplo en un curriculum
+            podemos tener campos que hacen referencia a los datos personales, otro grupo que hace referencia a 
+            la experiencia profesional y otro grupo con la formación-->
+            <!-- Para crear el grupo utilizamos el elemento fieldset y parael elemento legend-->
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="idprovincia">Provincia</label><br>
+                <select name="provincia" id="idprovincia">
+                    <option value="-1">- Selecciona -</option>
+                    <option value="1">Álava</option>
+                    <option value="2">Albacete</option>
+                    <option value="3">Alicante</option>
+                    <option value="4">Almería</option>
+                </select><br><br>
+                <label>Fecha de nacimiento</label><br>
+                <input type="text" name="día" maxlength="2" minlength="1" size="2"><label>de</label>
+                <select name="mes">
+                    <option value="1">Enero</option>
+                    <option value="2">Febrero</option>
+                    <option value="3">Marzo</option>
+                    <option value="5">Abril</option>
+                    <option value="6">Mayo</option>
+                    <option value="7">Junio</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Septiembre</option>
+                    <option value="10">Octubre</option>
+                    <option value="11">Noviembre</option>
+                    <option value="12">Diciembre</option>
+
+                </select><label>de</label>
+                <input type="text" name="anyo" size="4" minlength="4" maxlength="4"><br><br>
+
+                <label for="idtemas">Temas de interés</label><br>
+                <select name="temas" id="idtemas" size="5" multiple>
+                    <option value="1">Administración de bases de datos</option>
+                    <option value="2">Análisis y programación</option>
+                    <option value="3">Arquitectura</option>
+                    <option value="4">Calidad</option>
+                    <option value="5">ERP, CMR, Business Intelligence</option>
+                    <option value="1">Administración de bases de datos</option>
+                    <option value="6">Diseño web</option>
+                    <option value="7">Marketing digital</option>
+                    <option value="8">Redes de computadoras</option>
+                </select>
+            </fieldset><br><br>
+            <input type="submit" name="enviar" value="Enviar">
+        </form>
+            
+        
+    </body>
+
+</html>

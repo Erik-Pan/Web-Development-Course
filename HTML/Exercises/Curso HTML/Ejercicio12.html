@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <title>Reserva Hotel</title>
+        <meta charset = "UTF-8">
+    </head>
+
+    <body>
+        <h1>Reserva del Hotel</h1>
+        <form action="" method="get" enctype="">
+            <fieldset>
+                <legend>Datos del cliente</legend>
+
+                <label for="idNombre">Nombre completo: *</label>&nbsp;&nbsp;
+                <input type="text" name= "nombre" id="idNombre" size="35" placeholder="Escribe tu nombre completo" 
+                required><br><br>
+
+                <label for="idCorreo">Email: *</label>&nbsp;&nbsp;
+                <input type="email" name="correo" id="idCorreo" size="40" placeholder="ejemplo@correo.com" required><br><br>
+
+                <label for="idTelefono">Teléfono:</label>&nbsp;&nbsp;
+                <input type="text" name="telefono" id="idTelefono" size="9" minlength="1" maxlength="9"
+                placeholder="Ej: 638764569"><br><br>
+
+                <label for="idEntrada">Fecha de entrada:</label>&nbsp;&nbsp;
+                <input type="date" name="entrada" id="idEntrada"><br><br>
+
+                <label for="idSalida">Fecha de salida:</label>&nbsp;&nbsp;
+                <input type="date" name="salida" id="idSalida"><br><br>
+
+            </fieldset><br><br>
+
+            <fieldset>
+                <legend>Datos de la reserva</legend>
+
+                <label for="idHabitacion">Tipo de habitación:</label><br><br>
+
+                <input type="radio" name="habitacion" value="0" id="idIndividual" checked>
+                <label for="idIndividual">Individual</label><br>
+               
+                <input type="radio" name="habitacion" value="0" id="idDoble">
+                <label for="idDoble">Doble</label><br>
+
+                <input type="radio" name="habitacion" value="0" id="idSuite">
+                <label for="idSuite">Suite</label><br>
+
+                <label for="idAdicionales">Servicios adicionales:</label><br><br>
+
+                <input type = "checkbox" name = "desayunos" value = "0" id="idDesayunos" ><label>Desayunos</label><br>
+                
+                <input type = "checkbox" name = "piscina" value = "1" id="idPiscina"><label>Piscina</label><br>
+
+                <input type="checkbox" name="servicios" value="parking" id="idparking"><label for="idparking">Parking</label><br>
+
+                <input type="checkbox" name="servicios" value="spa" id="idspa"><label for="idspa">Spa</label><br><br>
+
+                <label for="idhuespedes">Número de huéspedes:</label>
+                <select name="huespedes" id="idhuespedes">
+                    <option value="1">1 persona</option>
+                    <option value="2">2 personas</option>
+                    <option value="3">3 personas</option>
+                    <option value="4">4 personas</option>
+                </select><br><br>
+
+                <label for="idcomentarios">Comentarios</label><br>
+                <textarea cols="50" rows="4" id="idcomentarios" placeholder="Escriba aquí cualquier petición especial..."></textarea>
+            
+            </fieldset>
+            <label for="idPrecio">Precio:</label><br>
+            <input type="number" name="pecio" id="idPrcio" step="0.05" size="5"> <label>€</label><br><br>
+            <input type="hidden" name="oculto" value="No se ve">
+
+            <label>Deshabilitado</label>
+            <input type="text" name="deshabiliado" disabled><br><br>
+
+            <label>Expediente</label>
+            <input type="text" name="expediente" value="2562349X56A" id="idExpediente" disabled><br><br>
+
+            <label>Nacionalidad</label><br>
+            <select name="nacionalidad" id="idNacionalidad">
+                <option value="1">Noruega</option>
+                <option value="2" selected>Dinamarca</option>
+                <option value="3">Escocia</option>
+                <option value="4">Japón</option>
+                <option value="5">Egipto</option>
+                <option value="6">Islandia</option>
+                <option value="7">Irlanda</option>
+                <option value="8">Grecia</option>
+            </select><br><br>
+
+            <input type="submit" name="guardar" value="Guardar" id="idGuardar">
+            <input type="reset" name="borrar" value="Borrar campos" ide="idBorrar">
+           
+        </form>
+
+    </body>
+</html>

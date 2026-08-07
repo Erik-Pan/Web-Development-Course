@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <title>Rellena tu CV</title>
+        <meta charset = "UTF-8">
+    </head>
+
+    <body>
+        <h1>Rellena tu CV</h1>
+
+        <form action = "Procesarcv.html" method = "GET" enctype = "multipart/form-data">
+
+            <label>Name: *</label>
+            <input tpye = "text" name = "nombre" required><br><br>
+            
+            <label>Apellidos: *</label>
+            <input type = "text" name = "apellidos" size = "50" required><br><br>
+
+            <label>Contraseña: *</label>
+            <input type = "password" name = "constrasenya" required><br><br>
+
+            <label>DNI: *</label>
+            <!-- Para aquellos campos que tengan un máximo o un mínimo número de caracteres, añadimos los atributos
+            maxlength o minlength respectivamente. En el caso de DNI, tanto máximo como mínimo es de 9, por lo que
+            tiene los dos atributos -->
+            <!-- Con placeholder podemos indicar un ejemplo dentro de la caja de texto de cómo hay que rellenar 
+            este campo pero que en realidad no es contenido dentro de él, en cuando se empieza a escribir el valor del
+            placeholder desaparece -->
+            <input tpye = "text" name = "DNI" size = "9" maxlength = "9" minlength ="9" 
+            required placeholder = "1234567-A"><br><br>
+
+            <label>Sexo:</label><br>
+            <input type = "radio" name = "sexo" value = "hombre"><label>Hombre</label><br>
+            <input type = "radio" name = "sexo" value = "mujer"><label>Mujer</label><br><br>
+
+            <label>Foto:</label><br>
+            <input type = "file" name = "Inserte su foto"><br><br>
+
+            <label></label>
+            <input type = "checkbox" name = "suscribirse" value = "1"><label>Suscribirme al boletín de novedades</label><br><br>
+            
+            <select name = "provincia" id = "idprovincia"> 
+                <option value = "1">Álava</option>
+                <option value = "2">Albacete</option>
+                <option value = "3">Alicante</option>
+                <option value = "4">Almería</option>
+            </select><br><br>
+            <!-- Para campos de texto donde hay que desarrollar mucho contenido, se utliza el elemento textarea indicando
+            con los antrbutos cols y rows el número de columnas y filas respectivamente -->
+            <label>Consulta:</label><br>
+            <textarea rows = "5" cols = "40" placeholder= "Escriba aquí..."></textarea><br><br>
+            <!-- Una lista desplegable también se puede comportar como un checkbox, es decir, que puede utilizarse
+            para seleccionar entre varias opciones más de una-->
+            <label>Preferencias con select:</label><br>
+            <select size = "3" name = "preferencias2" multiple>
+                <option value = "naturaleza">Naturaleza</option>
+                <option value = "musica">Música</option>
+                <option value = "lectura">Lectura</option>
+                <option value = "cine">Cine</option>
+                <option value = "viajes">Viajes</option>
+                <option value = "restaurantes">Restaurantes</option>
+            </select><br><br>
+            
+               
+            <input type = "submit" name = "guardar" value = "Guardar cambios"><br><br>
+            <input type = "reset" name = "borrar" value = "Borrar los datos introducidos">
+
+        </form>
+        <p>* Campos obligatorios</p>
+
+    </body>
+
+</html>

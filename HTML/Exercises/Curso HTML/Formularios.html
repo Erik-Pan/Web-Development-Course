@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <title>Formularios en HTML</title>
+        <meta charset = "UTF-8">
+    </head>
+
+    <body>
+        <h1>Formularios</h1>
+        <!-- Para crear formularios utilizamos la etiqueta form-->
+        <!-- form debe tener dos atributos obligatorios:
+         - action -> este atributo sirve para enviar el formulario al que procesa
+         - method -> para indicar el método de envío que puede ser GET o POST
+         Diferencias entre GET y POST
+          - El método GET incluye los datos en la URL (dirección en el navegador)
+          - El método POST no inluye los datos en la URL, los oculta
+          - El método GET no se puede enviar documentos
+          - El método GET está lmitiado en tamaño de datos a enviar en 512 bytes 
+        -->
+        <form action = "procesar.html" method = "POST" enctype = "multipart/form-data">
+            <!-- El elemento label nos sirve para etiquetar el elemento del formulario para que el usuario
+            sepa que es lo que tiene que rellenar en el campo que hay a continuación-->
+            <!-- Para asociar el label con el input, debemos indicar un identificador con el id input y 
+            al label le damos el valor de ese id del input al atributo for-->
+            <label for = "idenombre">Nombre:</label>
+            <!-- La mayor parte de elementos de un formulario se construye con el elemento input -->
+            <!-- Los campos del formulario deben tener al menos dos atributos, type y name-->
+            <!-- Para rellenar una caja de texto de una sola línea, indicamos que su tipo es de texto, es decir, text-->
+            <input type = "text" name = "nombre" id = "idnombre"><br><br>
+            <!-- El tipo de formulario para constraseñas es password -->
+            <label>Contraseña:</label>
+            <input type = "password" name = "Constrasenya"><br><br>
+
+            <label>Email:</label>
+            <!-- Si el campo a rellenar es para un correo electrónico es mejor indicar el tipo email que text porque
+            comprueba que el formato del texto que hemos introducido corresponde al de un correo-->
+            <input type = "email" name = "email"><br><br>
+
+            <!-- Para indicar una fecha, indicamos el tipo date y nos ahorramos tener que comprobar que sea 
+            una fecha correcta-->
+            <label>Fecha de nacimiento</label>
+            <input type = "date" name = "nacimiento"><br><br>
+            <!-- CUIDADO: Al enviar un documento en el formulario, debo indicar un atributo más en form, ese atributo
+            es enctype y e valor es multipart/form-data -->
+
+            <label>Curriculum</label>
+            <input type = "file" name = "Curriculum"><br><br>
+
+            <label>Sexo:</label><br>
+            <input type = "radio" name = "sexo" value = "hombre"><label>Hombre</label><br>
+            <input type = "radio" name = "sexo" value = "mujer"><label>Mujer</label><br>
+            <input type = "radio" name = "sexo" value = "otro"><label>Otro</label><br><br>
+
+            <label>Preferencias:</label><br>
+            <input type = "checkbox" name = "preferencias" value = "naturaleza"><label>Naturaleza</label><br>
+            <input type = "checkbox" name = "preferencias" value = "musica"><label>Música</label><br>
+            <input type = "checkbox" name = "preferencias" value = "lectura"><label>Lectura</label><br>
+            <input type = "checkbox" name = "preferencias" value = "cine"><label>Cine</label><br>
+            <input type = "checkbox" name = "preferencias" value = "viajes"><label>Viajes</label><br>
+            <input type = "checkbox" name = "preferencias" value = "restaurantes"><label>Restaurantes</label><br><br>
+
+            <!-- Para enviar el formulario indicamos el tipo submit
+            Para darle un texto personalizado al botón, lo indico en el atributo value -->
+            <input type = "submit" name = "enviar" value = "Enviar"><br><br>
+            <input type = "reset" name = "Borrar" value = "Reset">
+
+        </form>
+        
+    </body>
+</html>

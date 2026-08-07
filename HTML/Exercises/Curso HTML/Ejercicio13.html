@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <title>Formulario de compra</title>
+        <meta charset = "UTF-8">
+    </head>
+
+    <body>
+        <img src="carrito.imagen.png" alt="Carrito de la compra">
+        <h1>Formulario de compra</h1>
+
+        <form action="Ejercicio13.html" method="get">
+            <fieldset>
+                <legend>1. Datos del cliente</legend><br>
+
+                <label for="idNombre">Nombre completo: *</label>&nbsp;&nbsp;
+                <input type="text" name="name" id="idNombre=" size="30" minlength="2" maxlength="30" placeholder="Finn Barkham" required><br><br>
+
+                <label for="idCorreo">Correo electrónico: *</label>&nbsp;&nbsp;&nbsp;
+                <input type="email" name="correo" id="idCorreo" size="30" placeholder="oldHarald@freaking.com" required><br><br>
+
+                <label for="idTelefono">Teléfono:</label>&nbsp;&nbsp;&nbsp;
+                <!-- Para indicar el teléfono, utilizamos el tipo de campo tel, que aunque funciona como un tipo de texto, 
+                semánticamente y para los buscadores es importante marcarlo -->
+                <input type="tel" name="telefono" id="idTelefono" size="10" placeholder="666882369"><br><br>
+
+                <label for="idNacimiento">Fecha de nacimiento:</label>&nbsp;&nbsp;&nbsp;
+                <input type="date" name="nacimiento" id="idNacimiento" value="1988-11-15"><br><br>
+
+                <label for="idSexo">Sexo:</label><br>
+                <input type="radio" name="sexo" id="idHombre" value="hombre" checked><label for="idHombre">Hombre</label><br>
+                <input type="radio" name="sexo" id="idMujer" value="mujer"><label for="idMujer">Mujer</label><br>
+                <input type="radio" name="sexo" id="idOtro" value="otro"><label for="idOtro">Otro</label><br><br>
+
+                <label for="idBoletin">Suscripción al boletín:</label>&nbsp;
+                <input type="checkbox" name="boletin" id="idBoletin" value="1" checked>&nbsp;&nbsp;<label>Deseo recibir ofertas y novedades</label><br><br>
+
+                <label for="idCliente">ID de cliente:</label>&nbsp;&nbsp;&nbsp;
+                <input type="number" name="idcliente" id="idCliente" size="10" minlength="0" maxlength="8" placeholder="12345678"><br><br>
+               
+                <label for="idDNI">DNI/NIF: *</label>&nbsp;&nbsp;&nbsp;
+                <input type="text" name="dni" id="idDNI" size="10" minlength="9" maxlength="9" placeholder="12345678E" required><br><br>
+
+                <label for="idFechaCliente">Cliente desde:</label>&nbsp;&nbsp;&nbsp;
+                <input type="date" name="fechacliente" id="idFechaCliente" disabled value><br><br>
+
+                <label for="idNivel">Nivel de cliente:</label>&nbsp;&nbsp;&nbsp;
+                <select name="nivel" id="idNivel" disabled>
+                    <option value="Oro">Oro</option>
+                    <option value="Plata">Plata</option>
+                    <option value="Bronce">Bronce</option>
+                </select>
+                <input type="text" name="nivel" id="idNivel" size="10" value="Bronce" disabled><br><br>
+
+                <label for="idPais">País:</label>&nbsp;&nbsp;&nbsp;
+                <select name="pais" id="idPais">
+                    <option value="Noruega">Noruega</option>
+                    <option value="Dinamarca" selected>Dinamarca</option>
+                    <option value="Escocia">Escocia</option>
+                    <option value="Japon">Japón</option>
+                    <option value="Egipto">Egipto</option>
+                    <option value="Islandia">Islandia</option>
+                    <option value="Irlanda">Irlanda</option>
+                    <option value="Grecia">Grecia</option>
+                </select><br><br>
+
+                <label for="idProvincia">Provincia:</label>&nbsp;&nbsp;&nbsp;
+                <select name="provincia" id="idProvincia">
+                    <option value="RegionCapital">Región Capital </option>
+                    <option value="RegionZelanda">Región de Zelanda</option>
+                    <option value="DinamarcaMeridional">Región de Dinamarca Meridional</option>
+                    <option value="JutlandiaCentral">Región de Jutlandia Central</option>
+                    <option value="JutlandiaSeptendrional">Región de Jutlandia Septentrional</option>
+                </select><br><br>
+
+                <label for="idCPostal">Código postal:</label>&nbsp;&nbsp;&nbsp;
+                <input type="number" name="postal" id="idCPostal" size="10" minlength="5" maxlength="5" placeholder="06069"><br><br>
+
+            </fieldset><br><br>
+
+            <fieldset>
+                <legend>2. Datos del pedido</legend><br>
+
+                <label for="idProducto">Producto:</label>&nbsp;&nbsp;&nbsp;
+                <select name="producto" id="idProducto">
+                    <option value="1">Auriculares Inalámbricos Bluetooth</option>
+                    <option value="2">Play Station 5</option>
+                    <option value="2">Ordenador Portátil</option>
+                    <option value="4">iPone Smart</option>
+                    <option value="5">Tarjeta Gráfica Gigabyte</option>
+                    <option value="6">Monitor Samsung 21'</option>
+                </select><br><br>
+
+                <label for="idColor">Color:</label>&nbsp;&nbsp;&nbsp;
+                <select name="color" id="idColor" size="1">
+                    <option value="1">Negro</option>
+                    <option value="2">Rojo</option>
+                    <option value="3">Morado</option>
+                    <option value="4">Plateado</option>
+                    <option value="5">Gris</option>
+                </select><br><br>
+
+                <label for="idCantidad">Cantidad:</label>&nbsp;&nbsp;&nbsp;
+                <input type="number" name="cantidad"><br><br>
+
+                <label for="idPrecioUnitario">Precio unitario:</label>
+                <input type="number" name="precio_unitario" step="0.01" value="69.69" disabled> € <br><br>
+
+                <label for="idGastosdeEnvio">Gastos de envío::</label>
+                <input type="number" name="envio" step="0.01" value="4.69" disabled> € <br><br>
+
+                <label for="idTotalEstimado">Total estimado:</label>
+                <input type="number" name="total_estimado" step="0.01" value="669.69" readonly> € <br><br>
+
+                <label for="idFechaEntrega">Fecha de entraga:</label>&nbsp;&nbsp;&nbsp;
+                <input type="date" name="fecha_entrega" id="idFechaEntrega" value="2023-01-01"><br><br>
+
+                <label for="idFranja">Franja horaria:</label>
+                <select name="franja" id="">
+                    <option value="1">Mañana (8.00 - 14:00)</option>
+                    <option value="2">Tarde (16:00 - 20:00)</option>
+                </select><br><br>
+
+                <label for="idComentarios">Comentarios adicionales:</label> <br>
+                <textarea name="comentarios" id="idComentarios" cols="50" rows="3" placeholder="Escriba su comentario aquí..."></textarea>
+
+            </fieldset><br>
+
+            <fieldset>
+                <legend>3.Forma de pago</legend><br>
+
+                <label for="idPago">Elija su forma de pago:</label><br>
+                <input type="radio" name="forma_pago" value="tarjeta"><label for="idPago">Tarjeta de débito / crédito</label><br>
+                <input type="radio" name="forma_pago" value="paypal"><label for="idPago">PayPal</label><br>
+                <input type="radio" name="forma_pago" value="trasnferencia"><label for="idPago">Transferencia bancaria</label><br><br>
+
+                <label for="idTarjeta">Tarjeta:</label><br>
+                <select name="tarjeta" id="idTarjeta">
+                    <option value="1">Visa terminada en 6969 (Caduca 12/2029)</option>
+                    <option value="2">Mastercard terminada en 1988 (Caduca 01/2033)</option>
+                </select><br><br>
+
+                <label for="idTitular">Titular de la tarjeta</label>
+                <input type="text" name="titular" size="40">
+            </fieldset>
+
+            <input type="submit" name="enviar" value="Enviar">
+
+            
+
+        </form>
+
+        
+    </body>
+</html>
