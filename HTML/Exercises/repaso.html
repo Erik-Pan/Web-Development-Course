@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso</title>
+</head>
+
+<body>
+    <!--Comentario en HTML-->
+    <h1>Fundamentos de programación con HTML</h1>
+    <h2>HTML</h2>
+    <h3>Elementos de HTML</h3>
+    <h2>CSS</h2>
+    <h2>JavaScript</h2>
+    <p>Esto es un párrafo</p>
+    <!--Salto de línea-->
+    <br>
+    <!--Una imagen debe tener el atributo src para indicar la ruta e imagen a colocar
+    y alt como atributos mínimos-->
+    <img src="ek-logo2.png" alt="Texto alternativo" title="Título de la imagen" width="150">
+    <!--Listas ordenadas y no ordenadas, ol y ul respectivamente-->
+    <!--Lista de ingredientes-->
+    <ul>
+        <li>Potatoes</li>
+        <li>Onion</li>
+        <li>Oil</li>
+        <li>Eggs</li>
+        <li>Salt</li>
+    </ul>
+    <!--Para una receta utilizaíamos una lista ordenada-->
+    <ol>
+        <li>Fry potatoes</li>
+        <li>Add salt</li>
+        <li>Add the shaked eggs</li>
+    </ol>
+    <!--Tablas, el título se crea con caption. Se crea por filas, por cada fila 
+    indicamos sus celdas, que pueden ser th o td -->
+    <table border="1">
+        <caption><strong>Data</strong></caption>
+        <tr>
+            <th>DNI</th>
+            <th colspan="2">Name and surname</th>
+        </tr>
+        <tr>
+            <td>23064169E</td>
+            <td>Erik Pan</td>
+        </tr>
+    </table><br><br>
+
+    <table border="2">
+        <tr>
+            <td rowspan="3">Fundamentos de la programación con HTML, CSS y JavaScript</td>
+            <td>HTML</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+        </tr>
+    </table>
+    <!--Un enlace HTML se crea con la etiqueta a y atributo href 
+    para indicar el destino del enlace (ruta relativa o absoluta)-->
+    <a href="https://www.aulanova.es/">Texto enlace dirección absoluta</a><br>
+    <a href="../ejercicio1/ejercicio1.html">Texto del enlace con direción relativa</a>
+
+    <!--Formularios, para interatuar con el servidor, especialmente enviar información-->
+    <!--En el atributo action indicamos la dirección del fichero que procesará e
+     formulario y method es el método de envío-->
+    <form action="" method="post"></form>
+    <!--La mayoría de campos del formulario se crean con input, con tupe indicamos 
+    qué tipo de campo es. el atributo name sirve para identificarlo en el procesador-->
+    <label for="idName">Name:</label>
+    <input type="text" name="nombre" id="idName" placeholder="Amancio"><br>
+    <label for="idSurname">Surname:</label>
+    <input type="text" name="apellidos" id="idSurname" size="40" minlength="10" maxlength="50"><br>
+    <label for="idAddress">Address:</label>
+    <input type="text" name="direccion" id="idAddress"><br>
+    <label for="idDni">DNI:</label>
+    <input type="text" name="dni" id="iddni" minlength="9" maxlength="9" required><br>
+    <label for="">Number:</label>
+    <input type="number" name="number" id="idNumber" step="0.25">
+    <label for="idPassword">Password:</label>
+    <input type="password" name="password" id="idPassword"><br>
+    <label for="">Phone number:</label>
+    <input type="tel" name="phone" id="idPhone"><br>
+    <label for="idEmail">Email:</label>
+    <input type="email" name="email" id="idEmail"><br>
+    <label for="idFile">CV:</label>
+    <input type="file" name="file" id="idFile"><br>
+    <label for="idDate">Birthdate:</label>
+    <input type="date" name="date" id="idDate"><br>
+    <label for="idSex">Sex:</label>
+    <input type="radio" name="sex" id="idSex" value="male"><br>
+    <input type="radio" name="sex" id="idSex" value="female"><br>
+    <label for="idHobbies">Hobbies:</label><br>
+    <input type="checkbox" name="hobbies" value="hiking" id=""><label for="">Hiking</label><br>
+    <input type="checkbox" name="hobbies" value="photography" id=""><label for="">Photography</label><br>
+    <input type="checkbox" name="hobbies" value="drink beer" id=""><label for="">Drink Beer</label><br>
+    <input type="checkbox" name="hobbies" value="snowing" id=""><label for="">Snowing</label><br>
+    <input type="hidden" name="expediente" id="exp123456"><br>
+    <label for="">Choose your color</label>
+    <input type="color" name="color" id="idColor"><br>
+    <!--Para realizar una acción distinta a la de enviar, utilizamos el tipo button-->
+    <input type="button" name="save" value="Save" id="idSave"><br>
+    <input type="submit" name="submit" value="Submit"><br>
+    <input type="reset" name="reset" value="Reset" id="">
+
+
+</body>
+</html>
