@@ -1,0 +1,57 @@
+#titulo{
+    color: tomato;
+}
+
+.texto{
+    color:burlywood
+}
+
+p.texto {
+    color:green;
+}
+
+p{
+    color: slateblue;
+}
+
+div p {
+    color: silver;
+}
+
+div h2, div h3 {
+    color: brown;
+}
+
+* {
+    font-size: 24px;
+    color: black;
+}
+
+/* This is a commentary (or feedback) */
+
+/* .color {
+    color: #ff0000 HEXAGESIMAL
+} 
+    .color {
+    color: rgb(0, 255, 255); RGB
+}*/
+
+.color {
+    /* border: 5px red solid; */
+    /*
+        solid 
+        dashed
+        dotted
+        double
+        ridge
+        inset
+        outset
+        hidden
+        none
+    */
+
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 1cm;
+}
