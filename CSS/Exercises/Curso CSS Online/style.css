@@ -55,3 +55,14 @@ div h2, div h3 {
     border-radius: 5px;
     border-width: 1cm;
 }
+
+#fondo {
+    background-color: rgba(255,0,0);
+    opacity: 0.3;
+    height: 400px;
+    background-image: url(images/scandinavian-girl.png);
+    background-size: 200px 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background: #f00 url(images/scandinavian-girl.png) repeat-y center bottom; */
+}
