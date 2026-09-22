@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="repaso2-1.css">
+        <title>Callejeros viajemos</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id="contenedor">
+            <!-- HEADER la parte superior que ocupa toda la imagen -->
+            <header>
+                <!-- Parte superior de la imagen, coincide con el cielo -->
+                <div class="cabecera-superior">
+                    <!-- Donde va el logo-->
+                    <div class="logo">
+                        <div >
+                            <!--Aquí iría la imagen del logo-->
+                            <a href="index.html"><img src="imagenes/paper-plane.png"></a>
+                        </div>
+                        <div>
+                            <h1>Viajemos</h1>
+                            <p>descubre, vive, recuerda.</p>
+                        </div>
+                    </div>
+                    <!-- Menú de navegación superior -->
+                    <nav>
+                        <ul class="menu">
+                            <li><a href="">Inicio</a></li>
+                            <li><a href="">Destinos</a></li>
+                            <li><a href="">Experiencias</a></li>
+                            <li><a href="">Consejos</a></li>
+                            <li><a href="">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Resto de la imagen, es decir, toda menos el cielo -->
+                <div>
+                    <p>El mundo te está esperando</p>
+                    <p>Descubre destinos increíbles, vive experiencias únicas y crea recuerdos para toda la vida</p>
+                    <p><a href="">Empieza tu aventura &rarr;</a></p>
+                </div>
+            </header>
+            <!--Toda la parte de la web con el fondo blanco
+            termina donde empieza el footer-->
+            <main>
+                <!-- Este div me sirve para CSS para poner los dos elementos
+                 que estan dentro en horizontal, haciendo que sea flexbox-->
+                <div>
+                    <section>
+                        <!-- Sección lugares que inspiran-->
+                        <h2>Destinos populares</h2>
+                        <div>
+                            <p class="lugares">Lugares que inspiran</p>
+                            <p><a href="">Ver todos los destinos &rarr;</a></p>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="imagenes/santorini.png" alt="Santorini Grecia">
+                                <h3><span>Santorini</span> Grecia</h3>
+                            </div>
+                            <div>
+                                <img src="imagenes/lago-di-braies.jpg" alt="lago di Braies Italia">
+                                <h3><span>Lago di Braies</span> Italia</h3>
+                            </div>
+                            <div>
+                                <img src="imagenes/bali.jpg" alt="Bali Indonesia">
+                                <h3><span>Bali</span> Indonesia</h3>
+                            </div>
+                            <div>
+                                <img src="imagenes/barcelona.jpg" alt="España">
+                                <h3><span>Barcelona</span> España</h3>
+                            </div>
+                        </div>
+                    </section>
+                    <aside>
+                        <!-- Tu próxima aventura empieza aquí-->
+                        <p>Tu próxima aventura empieza aquí</p>
+                        <ul>
+                            <li><span>Destinos únicos</span> Lugares seleccionados</li>
+                            <li><span>Mejores precios</span> Sin intermediarios</li>
+                            <li><span>Experiencias reales</span> Viajeros como tú</li>
+                            <li><span>Atención personalizada</span> Estamos contigo</li>
+                        </ul>
+                    </aside>
+                </div>
+                <!-- Más que un viaje-->
+                <section>
+                    <h2>Experiencias</h2>
+                    <p>Más que un viaje</p>
+                    <ul>
+                        <li>
+                            <h3>Naturaleza</h3>
+                            <p>Conecta con países que te dejarán sin palabras.</p>
+                        </li>
+                        <li>
+                            <h3>Cultura</h3>
+                            <p>Conoce historias, tradiciones y nuevas formas de ver el mundo.</p>
+                        </li>
+                        <li>
+                            <h3>Aventura</h3>
+                            <p>Vive momentos que recordarás siempre.</p>
+                        </li>
+                    </ul>
+                </section>
+            </main>
+            <footer>
+                <!-- capa superior del footer -->
+                <div>
+                    <!-- Logo del footer -->
+                    <div>
+                        <h4>Viajemos</h4>
+                        <p>Descrubre, vive, recuerda.</p>
+                    </div>
+                    <!-- menú del pie -->
+                    <nav>
+                        <ul>
+                            <li><a href="">Inicio</a></li>
+                            <li><a href="">Destinos</a></li>
+                            <li><a href="">Experiencias</a></li>
+                            <li><a href="">Consejos</a></li>
+                            <li><a href="">Contacto</a></li>
+                        </ul>
+                    </nav>
+                    <!-- Redes sociales -->
+                    <div>
+                        <p>Siguenos</p>
+                        <ul>
+                            <li><a href=""><img src="imagenes/icon-instagram.png" alt="Instragram"></a></li>
+                            <li><a href=""><img src="imagenes/icon-facebook.png" alt="Facebook"></a></li>
+                            <li><a href=""><img src="imagenes/icon-youtube.png" alt="Youtube"></a></li>
+
+                       </ul>
+                    </div>
+                    <!-- formulario -->
+                    <div>
+                        <form action="index.html" method="post">
+                            <label for="id_correo">Suscríbete a nuestra newsletter</label>
+                            <input type="email" name="correo" id="id_correo" placeholder="Tu correo electrónico">
+                            <input type="submit" name="suscribir" value="Suscribir"> 
+                        </form>
+                    </div>    
+                </div>
+                <!-- capa inferior del footer-->
+                <div>
+                    <!-- Parte izquierda de la parte inferior 
+                     del footer-->
+                    <div>
+                        <p>&copy; 2025 Viajemos. Todos los derechos reservdos.</p>
+                    </div>
+                    <!-- Parte derecha de la parte inferior 
+                     del footer-->
+                    <div>
+                        <p>Viajar hoy, para un mejor mañana.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>  
+</body>
+</html>
