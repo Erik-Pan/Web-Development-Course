@@ -113,7 +113,7 @@ main {
 
 main img {
     width: 200px;
-    height: 120px;
+    height: 150px;
     border-radius: 5px;
 }
 main > div {
@@ -124,7 +124,7 @@ main > div {
 
 main > div > section {
     padding: 20px;
-    width: 90;
+    width: 100%;
 }
 
 main > div> section h2 {
@@ -159,7 +159,85 @@ main > div:first-child > section > div:first-of-type > p:last-child a {
 main > div:first-child > section > div:last-of-type {
     display: flex;
     gap: 10px;
+    margin-top: 20px;
 }
+
+.destino {
+    position: relative;
+}
+
+.destino h3 {
+    font-weight: normal;
+    font-size: 12px;
+    padding-left: 40px;
+    background-image: url(imagenes/location3-icon.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 5px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0,0,0,0.2);
+    width: 170px;
+    backdrop-filter: blur(8px);
+    border-radius: 25px;
+
+}
+
+.destino h3 span {
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
+}
+
+aside {
+    background-color: rgb(234,240,239);
+    margin-top: 20px;
+    padding: 20px;
+}
+
+aside p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside li {
+    font-size: 12px;
+    margin-top: 10px;
+    padding-left: 30px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position-y: 2px;
+}
+
+#mundo {
+    background-image: url(imagenes/icon-globe-rb.png);
+}
+
+#etiqueta {
+    background-image: url(imagenes/icon-tag-bg.png);
+}
+
+#personas {
+    background-image: url(imagenes/icon-people-rb.png);
+}
+
+#corazon {
+    background-image: url(imagenes/icon-heart-rb.png);
+}
+
+aside span {
+    font-weight: bold;
+    display: block;
+}
+
+
 
 
 
