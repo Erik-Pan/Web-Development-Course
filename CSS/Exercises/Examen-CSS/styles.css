@@ -1,0 +1,29 @@
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
+    font-size: 36px;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: aquamarine;
+}
+
+h1, h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.5;
+    margin: 15px;
+}
+
+.box {
+    padding: 10px;
+    margin: 30px;
+    border: 1px solid grey;
+    background-color: orchid;
+}
+
