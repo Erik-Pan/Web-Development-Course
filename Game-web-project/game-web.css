@@ -221,19 +221,26 @@ header button:hover {
 .latest-posts > div {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #555;
+    border-image: linear-gradient(to right, transparent 5%, #444 20%, #444 40%, transparent 95%) 1;
 }
 
 .latest-posts > div > h2 {
     font-family: Orbitron;
     color: white;
-    font-size:26px;
+    font-size:28px;
     padding-left: 40px;
 }
 
 .latest-posts > div > a {
+    display: inline-flex;
+    align-items: center;
     text-decoration: none;
     color: red;
     font-size: 20px;
+    margin-right: 50px;
+    gap: 10px;
 }
 
 .latest-posts svg {
