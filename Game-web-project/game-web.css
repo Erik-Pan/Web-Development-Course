@@ -2,10 +2,11 @@ body {
     background-color: black;
 }
 
+/*HEADER*/
 header {
     border: 2px solid red;
     border-radius: 10px;
-    box-shadow: 0 0 7px #b66bff;
+    box-shadow: 0 0 8px #b66bff;
     display: flex;
     align-items: center;
 }
@@ -84,4 +85,161 @@ header button:hover {
     background-color: rgba(255, 0, 0, 0.20);
 }
 
+/*BODY: SECTION 1*/
+.hero {
+    border: 2px solid red;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #b66bff;
+    align-items: center;
+    color: white;
+}
+
+.hero > div {
+    display: flex;
+    position: relative;
+}
+
+.hero > div::before {
+    content: "";
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0.6px, transparent 1px),
+    radial-gradient(circle at 20% 75%, rgba(255, 255, 255, 0.4) 0.5px, transparent 1px);
+    background-size: 8px 8px, 10px 10px;
+    position: absolute;
+    width: 90px;
+    height: 80px;
+    left: 950px;
+    top: 123px;
+    z-index: 1;
+    animation: snowing 16s linear infinite;   
+}
+
+@keyframes snowing {
+    0% {
+        background-position: 0 0, 3 -6px, 6 2px;
+    }
+
+    50% {
+        background-position: 2px 40px, -1px 55px, 4px 30px;
+    }
+
+    100% {
+        background-position:  -2px 80px, 5px 110px, -3px 70px;
+    }
+}
+
+.hero > div::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    margin-left: 1040px;
+    margin-top: 230px;
+    background: radial-gradient(white, transparent);
+    filter: blur(6px);
+    animation: smoke 3s ease-out infinite;
+}
+
+@keyframes smoke {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-60%);
+    }
+}
+
+.hero > div > div {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+
+.hero > div > div > h1 {
+    font-family: Orbitron;
+    font-size: 36px;
+}
+
+.hero > div > div > p {
+    font-family: Rajdhani;
+    font-size: 20px;
+}
+
+.hero > div > img {
+    width: 700px;
+    height: 400px;
+    padding: 30px;
+    mask-composite: intersect;
+    mask-image: linear-gradient(to right, transparent, black 15%),
+    linear-gradient(to left, transparent, black 8%),
+    linear-gradient(to bottom, transparent, black 8%),
+    linear-gradient(to top, transparent, black 8%);
+}
+
+.hero a {
+    color: white;
+    background-color: rgba(255, 0, 0, 0.40);
+    font-family: Rajdhani;
+    text-decoration: none;
+    border: 2px solid red;
+    box-shadow: 0 0 8px #b66bff;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 35px;
+    white-space: nowrap;
+    font-size: 20px;
+    transition: 1s;
+}
+
+.hero a svg {
+    width: 25px;
+    height: 25px;
+}
+
+.hero a:hover {
+    background-color: rgba(168, 64, 166, 0.70)
+}
+
+/*BODY: SECTION 2*/
+.latest-posts {
+    border: 2px solid red;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #b66bff;
+    margin-top: 15px;
+    width: 600px;
+    height:700px;
+}
+
+.latest-posts > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.latest-posts > div > h2 {
+    font-family: Orbitron;
+    color: white;
+    font-size:26px;
+    padding-left: 40px;
+}
+
+.latest-posts > div > a {
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+}
+
+.latest-posts svg {
+    width: 25px;
+    height: 25px;
+}
+
+/*BODY: SECTION 3*/
 
