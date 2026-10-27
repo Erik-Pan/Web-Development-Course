@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 con JavaScript</title>
+</head>
+<body>
+    <h1>Ejercicio 2 con JavaScript</h1>
+    <script>
+        let age;
+        
+        // Pedir datos al ususario utilizando la función prompt
+        age = prompt("Give me your age"); // OJO! prompt guarda cadenas de texto
+                                        // 18 no guarda 18, sino "18" (texto)
+        age = parseInt(age); // parseInt transforma una cadena que contiene un númer a un número real (18 a "18")
+
+
+        if(age <= 12){
+            console.log("It's a child");
+        } else if(age <= 17){
+            console.log("It's a teenager");
+        } else if(age <= 64){
+            console.log("It's an adult"); 
+        } else if(age >= 65){
+            console.log("It's an old person");
+        } else("It's dead");
+        
+    </script>
+</body>
+</html>
