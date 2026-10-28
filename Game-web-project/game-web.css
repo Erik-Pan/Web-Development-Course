@@ -231,6 +231,7 @@ header button:hover {
     color: white;
     font-size:28px;
     padding-left: 40px;
+    margin-bottom: 17px;
 }
 
 .latest-posts > div > a {
@@ -241,11 +242,42 @@ header button:hover {
     font-size: 20px;
     margin-right: 50px;
     gap: 10px;
+    transition: 1s;
 }
 
 .latest-posts svg {
     width: 25px;
     height: 25px;
+}
+
+.latest-posts > div > a:hover {
+    color: #b66bff;
+}
+
+.post-card {
+    display: flex;
+    border: 2px solid red;
+    width: 560px;
+    height: 250px;
+    margin-top: 25px;
+    margin-left: 17px;
+}
+
+.post-card > img {
+    display: flex;
+    border: 2px solid #666;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.post-card > p:first-of-type {
+    display: flex;
+    color: grey;
+    font-family: Rajdhani;
+    font-size: 20px;
+    margin-left: 15px;
+    background-color: rebeccapurple;
+    width: 200px;
 }
 
 /*BODY: SECTION 3*/
