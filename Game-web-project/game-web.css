@@ -258,7 +258,7 @@ header button:hover {
     display: flex;
     border: 2px solid red;
     width: 560px;
-    height: 250px;
+    height: 170px;
     margin-top: 25px;
     margin-left: 17px;
 }
@@ -266,18 +266,34 @@ header button:hover {
 .post-card > img {
     display: flex;
     border: 2px solid #666;
-    margin: 5px;
+    margin: 10px;
     border-radius: 10px;
 }
 
-.post-card > p:first-of-type {
+.post-card > div > p:first-of-type {
     display: flex;
-    color: grey;
+    color: #CCCCCC;
     font-family: Rajdhani;
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 15px;
-    background-color: rebeccapurple;
-    width: 200px;
+    width: 250px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.post-card > div > h3 {
+    color: #CCCCCC;
+    font-family: Rajdhani;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.post-card > div > p:last-of-type {
+    color: #CCCCCC;
+    font-family: Rajdhani;
+    margin: 15px;
+    margin-top: 5px;
 }
 
 /*BODY: SECTION 3*/
