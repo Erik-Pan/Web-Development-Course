@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 con JavaScript</title>
+</head>
+<body>
+    <h1>Ejercicio 4 con JavaScript</h1>
+
+    <script>
+        let option = prompt("Elije una opción:\n\t1.- Sumar\n\t2.- Restar\n\t3.- Multiplicar\n\t4.- Dividir");
+        option = parseInt(option);
+
+        let num1 = prompt("Dame el primer valor");
+        num1 = parseInt(num1);
+        let num2 = prompt("Dame el segundo valor");
+        num2 = parseInt(num2);
+
+        switch(option){
+            case 1:
+                console.log("El resultado de la suma es: "+(num1 + num2));
+                break;
+            case 2:
+                console.log("El resultado de la resta es: "+(num1 - num2));
+                break;
+            case 3:
+                console.log("El resultado de la multiplicación es: "+(num1 * num2));
+                break;
+            case 4:
+                if(num != 0){
+                    console.log("El resultado de la división es: "+(num1 / num2));
+                }else{
+                    console("No se puede dividir entre 0");
+                }
+                
+                break;
+            default:
+                console.log("Opción no válida");
+        }
+    </script>
+</body>
+</html>
