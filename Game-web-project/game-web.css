@@ -86,6 +86,14 @@ header button:hover {
 }
 
 /*BODY: SECTION 1*/
+.latest-posts > article > a > img, .game-card > a > img {
+    transition: 1s;
+}
+
+.latest-posts > article > a > img:hover, .game-card > a > img:hover {
+    transform: scale(1.1);
+}
+
 .hero {
     border: 2px solid red;
     margin-top: 15px;
@@ -208,14 +216,19 @@ header button:hover {
     background-color: rgba(168, 64, 166, 0.70)
 }
 
+/*GRID*/
+.content-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 45fr) minmax(0, 55fr);
+    column-gap: 20px;
+}
+
 /*BODY: SECTION 2*/
 .latest-posts {
     border: 2px solid red;
     border-radius: 10px;
     box-shadow: 0 0 8px #b66bff;
     margin-top: 15px;
-    width: 600px;
-    height:700px;
 }
 
 .latest-posts > div {
@@ -241,8 +254,10 @@ header button:hover {
     color: red;
     font-size: 20px;
     margin-right: 50px;
+    margin-top: 15px;
     gap: 10px;
     transition: 1s;
+    transform-origin: bottom;
 }
 
 .latest-posts svg {
@@ -252,22 +267,34 @@ header button:hover {
 
 .latest-posts > div > a:hover {
     color: #b66bff;
+    transform: scale(1.2);
+}
+
+.latest-posts > img {
+    width: 90%;
+    margin-top: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .post-card {
     display: flex;
-    border: 2px solid red;
-    width: 560px;
-    height: 170px;
     margin-top: 25px;
     margin-left: 17px;
+    margin-right: 17px;
+    border-bottom: 2px solid #555;
+    border-image: linear-gradient(to right, transparent 5%, #444 20%, #444 40%, transparent 95%) 1;
+    padding-bottom: 25px;
 }
 
-.post-card > img {
+.post-card > a > img {
     display: flex;
     border: 2px solid #666;
     margin: 10px;
     border-radius: 10px;
+    width: 180px;
+    height: 160px;
 }
 
 .post-card > div > p:first-of-type {
@@ -277,16 +304,25 @@ header button:hover {
     font-size: 18px;
     margin-left: 15px;
     width: 250px;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 0;
 }
 
 .post-card > div > h3 {
-    color: #CCCCCC;
     font-family: Rajdhani;
     margin-left: 15px;
     margin-top: 10px;
     margin-bottom: 0;
+}
+
+.post-card > div > h3 > a {
+    color: #CCCCCC;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.post-card > div > h3 > a:hover {
+    color: red;
 }
 
 .post-card > div > p:last-of-type {
@@ -297,4 +333,113 @@ header button:hover {
 }
 
 /*BODY: SECTION 3*/
+.games {
+    border: 2px solid red;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #b66bff;
+    margin-top: 15px;
+}
+
+.games > div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #555;
+    border-image: linear-gradient(to right, transparent 5%, #444 20%, #444 40%, transparent 95%) 1;
+}
+
+.games > div > h2 {
+    font-family: Orbitron;
+    color: white;
+    font-size:28px;
+    padding-left: 40px;
+    margin-bottom: 17px;
+}
+
+.games > div > a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+    margin-right: 50px;
+    margin-top: 15px;
+    gap: 10px;
+    transform-origin: bottom;
+    transition: 1s;
+}
+
+.games > div > a > svg {
+    width: 25px;
+    height: 25px;
+}
+
+.games > div > a:hover {
+    color: #b66bff;
+    transform: scale(1.2);
+}
+
+.game-card {
+    display: flex;
+    margin-top: 25px;
+    margin-left: 17px;
+    margin-right: 17px;
+    border-bottom: 2px solid #555;
+    border-image: linear-gradient(to right, transparent 5%, #444 20%, #444 40%, transparent 95%) 1;
+    padding-bottom: 25px;
+}
+
+.game-card > a > img {
+    display: flex;
+    border: 2px solid #666;
+    margin: 10px;
+    border-radius: 10px;
+    width: 230px;
+    height: 160px;
+}
+
+.game-card > div {
+    margin-left: 15px;
+}
+
+.game-card > div > h3 {
+    display: flex;
+    font-family: Rajdhani;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.game-card > div > h3 > a {
+    text-decoration: none;
+    color: #CCCCCC;
+    transition: 1s;
+}
+
+.game-card > div > h3 > a:hover {
+    color: red;
+}
+
+.game-card > div > p {
+    color: #CCCCCC;
+    font-family: Rajdhani;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.game-card > div > p:first-child {
+    padding-bottom: 15px;
+}
+
+.game-card > div > p:nth-child(3) {
+    display: inline-block;
+    border: 1px solid red;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 3px;
+}
+
+.game-card > div > img {
+    width: 20px;
+    margin-left: 10px;
+    transform: translateY(5px);
+}
 
