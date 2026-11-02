@@ -30,13 +30,21 @@
                 </ul>
             </nav>
         </div>
-        <div>
-            <button type="button" aria-label="Search">
-                <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
-                    <circle cx="11" cy="11" r="7" fill="none" stroke="white" stroke-width="2"></circle>
-                    <line x1="16" y1="16" x2="21" y2="21" stroke="white" stroke-width="2"></line>
-                </svg>
+        <div class="header-actions">
+            <button class="search-button" type="button" aria-label="Search">
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="11" cy="11" r="7" fill="none" stroke="white" stroke-width="2"></circle>
+                <line x1="16" y1="16" x2="21" y2="21" stroke="white" stroke-width="2"></line>
+            </svg>
             </button>
+            <div class="language-switcher">
+                <button type="button" aria-label="Switch to English">
+                    <img src="images/gb.svg" alt="">
+                </button>
+                <button type="button" aria-label="Cambiar a español">
+                    <img src="images/es.svg" alt="">
+                </button>
+            </div>
         </div>
     </header>
     <main>
@@ -109,27 +117,29 @@
         </div>
     </main>
     <footer>
-        <div>
-            <div>
-                <img src="images/ek-journey-logo.png" alt="EK Journey" width="100">
-                <p>Games &middot; Code &middot; Learning &middot; Goals</p>
-                <p>&copy; 2026 EK-JOURNEY. All rights reserved.</p>
-            </div>
-            <div>
-                <ul>
-                    <li><a href=""><img src="../Icons/facebook.svg" alt="Facebook" width="50"></a></li>
-                    <li><a href=""><img src="../Icons/youtube.svg" alt="Youtube" width="50"></a></li>
-                    <li><a href=""><img src="../Icons/github.svg" alt="GitHub" width="50"></a></li>
-                    <li><a href=""><img src="../Icons/linkedin.svg" alt="Linkedin" width="50"></a></li>
-                </ul>
-            </div>
-            <div>
-                <img src="../Icons/unity.svg" alt="Unity" width="50">
-                <img src="../Icons/csharp-plain.svg" alt="CSharp" width="50">
-                <img src="../Icons/blender.svg" alt="Blender" width="50">
-            </div>
+        <div class="footer-top">
+            <img src="images/ek-journey-logo.png" alt="EK Journey" width="100">
+            <p>Games &middot; Code &middot; Learning &middot; Goals</p>
+            <ul>
+                <li><a href=""><img src="../Icons/facebook.svg" alt="Facebook"></a></li>
+                <li><a href=""><img src="../Icons/youtube.svg" alt="Youtube"></a></li>
+                <li><a href=""><img src="../Icons/github.svg" alt="GitHub"></a></li>
+                <li><a href=""><img src="../Icons/linkedin.svg" alt="Linkedin"></a></li>
+            </ul>
+            <form action="">
+                <p>SUBSCRIBE</p>
+                <input type="email" placeholder="Your mail..." required>
+                <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
+                </button>
+            </form>
         </div>
-        
+        <div class="footer-bottom">
+            <p><span class="copyright-symbol">&copy;</span> 2026 EK-JOURNEY. All rights reserved.</p>
+            <img src="../Icons/unity.svg" alt="Unity" width="50">
+            <img src="../Icons/csharp-plain.svg" alt="CSharp" width="50">
+            <img src="../Icons/blender.svg" alt="Blender" width="50">
+        </div>
     </footer>
 </body>
 </html>
