@@ -1,0 +1,157 @@
+.games-catalog {
+    background-color: black;
+    border: 2px solid red;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #b66bff;
+    margin-top: 15px;
+    padding: 30px 40px 40px;
+    color: white;
+}
+
+.games-catalog-heading {
+    margin-top: -30px;
+    padding-top: 30px;
+    text-align: center;
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #444;
+    position: relative;
+    overflow: hidden;
+}
+
+.games-banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    z-index: 0;
+    mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 20%,
+    black 70%,
+    transparent 100%);
+}
+
+.games-catalog-heading h1,
+.games-catalog-heading p {
+    position: relative;
+    z-index: 1;
+}
+
+.games-catalog-heading h1 {
+    font-family: Orbitron, sans-serif;
+    font-size: 48px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.games-catalog-heading h1::before,
+.games-catalog-heading h1::after {
+    content: "";
+    width: 150px;
+    height: 3px;
+}
+
+.games-catalog-heading h1::before {
+    background: linear-gradient(to right, transparent, red);
+}
+
+.games-catalog-heading h1::after {
+    background: linear-gradient(to left, transparent, red);
+}
+
+.games-catalog-heading p {
+    font-family: Rajdhani, sans-serif;
+    font-size: 22px;
+    color: #CCCCCC;
+    margin-bottom: 0;
+}
+
+.catalog-game {
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr) 160px;
+    align-items: center;
+    gap: 25px;
+    background-color: #0b0b12;
+    border: 2px solid #D4143B;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s;
+}
+
+.catalog-game:hover {
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.35);
+}
+
+.catalog-game > img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #666;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.catalog-game-info {
+    min-width: 0;
+}
+
+.catalog-game-info h2 {
+    font-family: Rajdhani, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #CCCCCC;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.catalog-game-info p {
+    font-family: Rajdhani, sans-serif;
+    font-size: 20px;
+    color: #CCCCCC;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.catalog-game-info p:last-of-type {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.catalog-game-info p img {
+    width: 20px;
+    height: 20px;
+}
+
+.catalog-game > a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: end;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.40);
+    border: 2px solid red;
+    border-radius: 5px;
+    box-shadow: 0 0 8px #b66bff;
+    padding: 12px 18px;
+    font-family: Rajdhani, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+}
+
+.catalog-game > a:hover {
+    background-color: rgba(168, 64, 166, 0.70);
+}

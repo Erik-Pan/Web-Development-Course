@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="game-web.css">
+    <link rel="stylesheet" href="games.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Games - EK-Journey</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/ek-logo.png" alt="Logo">
+            <img src="images/ek-name.png" alt="Name">
+            <img src="images/ek-slogan2.png" alt="Slogan">
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="game-web.html#home">HOME</a></li>
+                    <li><a href="games.html">GAMES</a></li>
+                    <li><a href="">DEVLOG</a></li>
+                    <li><a href="">ABOUT ME</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-actions">
+            <button class="search-button" type="button" aria-label="Search">
+                <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7" fill="none" stroke="white" stroke-width="2"></circle>
+                    <line x1="16" y1="16" x2="21" y2="21" stroke="white" stroke-width="2"></line>
+                </svg>
+            </button>
+            <div class="language-switcher">
+                <button type="button" aria-label="Switch to English">
+                    <img src="images/gb.svg" alt="">
+                </button>
+                <button type="button" aria-label="Cambiar a español">
+                    <img src="images/es.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="games-catalog">
+            <div class="games-catalog-heading">
+                <img class="games-banner-image" src="images/games-banner-bg.png" alt="">
+                <h1>GAMES</h1>
+                <p>Explore my projects with more detail.</p>
+            </div>
+            <article class="catalog-game">
+                <img src="images/ethereal-ascent-concept-art.png" alt="Ethereal Ascent">
+                <div class="catalog-game-info">
+                    <h2>ETHEREAL ASCENT (DEMO PROJECT)</h2>
+                    <p>Survival horror / Horror adventure</p>
+                    <p>
+                        <img src="images/windows-icon.png" alt="">
+                        PC / Windows
+                    </p>
+                </div>
+                <a href="ethereal-ascent.html">VIEW GAME &rarr;</a>
+            </article>
+            <article class="catalog-game">
+                <img src="images/space-call-concept-art.png" alt="Space Call">
+                <div class="catalog-game-info">
+                    <h2>SPACE CALL (DEMO PROJECT)</h2>
+                    <p>Sci-Fi Shooter</p>
+                    <p>
+                        <img src="images/windows-icon.png" alt="">
+                        PC / Windows
+                    </p>
+                </div>
+                <a href="space-call.html">VIEW GAME &rarr;</a>
+            </article>
+            <article class="catalog-game">
+                <img src="images/johnlemon-concept-art.png" alt="John Lemon's Haunted Jaunt">
+                <div class="catalog-game-info">
+                    <h2>LEMON'S HAUNTED JAUNT</h2>
+                    <p>Adventure</p>
+                    <p>
+                        <img src="images/windows-icon.png" alt="">
+                        PC / Windows
+                    </p>
+                </div>
+                <a href="lemon-haunted-jaunt.html">VIEW GAME &rarr;</a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <img src="images/ek-journey-logo.png" alt="EK Journey" width="100">
+            <p>Games &middot; Code &middot; Learning &middot; Goals</p>
+            <ul>
+                <li><a href=""><img src="../Icons/facebook.svg" alt="Facebook"></a></li>
+                <li><a href=""><img src="../Icons/youtube.svg" alt="Youtube"></a></li>
+                <li><a href=""><img src="../Icons/github.svg" alt="GitHub"></a></li>
+                <li><a href=""><img src="../Icons/linkedin.svg" alt="Linkedin"></a></li>
+            </ul>
+            <form action="">
+                <p>SUBSCRIBE</p>
+                <input type="email" placeholder="Your mail..." required>
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+        <div class="footer-bottom">
+            <p><span class="copyright-symbol">&copy;</span> 2026 EK-JOURNEY. All rights reserved.</p>
+            <img src="../Icons/unity.svg" alt="Unity" width="50">
+            <img src="../Icons/csharp-plain.svg" alt="CSharp" width="50">
+            <img src="../Icons/blender.svg" alt="Blender" width="50">
+        </div>
+    </footer>
+</body>
+</html>
