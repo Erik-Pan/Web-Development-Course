@@ -152,7 +152,35 @@ header nav a.active {
     left: 950px;
     top: 123px;
     z-index: 1;
-    animation: snowing 16s linear infinite;   
+    animation: snowing 16s linear infinite; 
+    display: none;  
+}
+
+.snow-window {
+    position: absolute;
+    left: 79%;
+    top: 28%;
+    width: 8%;
+    height: 16%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    pointer-events: none;
+    animation: snow-fall var(--duration) linear var(--delay) infinite;
+}
+
+@keyframes snow-fall {
+    to {
+        top: 100%;
+        transform: translateX(var(--drift));
+    }
 }
 
 @keyframes snowing {
