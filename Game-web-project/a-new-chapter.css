@@ -1,0 +1,218 @@
+.chapter-page {
+    width: 100%;
+    margin: 15px 0 30px;
+    font-family: Rajdhani, sans-serif;
+    color: #eeeeee;
+    box-sizing: border-box;
+}
+
+.chapter-page * {
+    box-sizing: border-box;
+}
+
+.chapter-article {
+    padding: 35px 45px 40px;
+    background: linear-gradient(
+        110deg,
+        #08070d,
+        #100913 65%,
+        #08070d
+    );
+    border: 2px solid #d4143b;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(212, 20, 59, 0.35);
+}
+
+.chapter-heading {
+    max-width: 1100px;
+    margin: 0 auto 25px;
+    text-align: left;
+}
+
+.chapter-category {
+    margin: 0 0 12px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #c988e0;
+}
+
+.chapter-heading h1 {
+    font-family: Orbitron, sans-serif;
+    font-size: clamp(30px, 3vw, 42px);
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0 0 15px;
+    text-shadow: 0 0 12px rgba(212, 20, 59, 0.4);
+}
+
+.chapter-heading h1::before {
+    content: "//";
+    color: #e02250;
+    margin-right: 15px;
+}
+
+.chapter-heading time {
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #c98cdc;
+}
+
+.chapter-image {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 8px;
+    background: #100913;
+    border-top: 1px solid #a64cc4;
+    border-right: 1px solid #a64cc4;
+    border-bottom: 1px solid #a92a4a;
+    border-left: 1px solid #a92a4a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(212, 20, 59, 0.2);
+    overflow: hidden;
+}
+
+.chapter-image img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+}
+
+.chapter-content {
+    max-width: 1050px;
+    margin: 30px auto 0;
+}
+
+.chapter-content p {
+    font-family: Rajdhani, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #ded6e3;
+    margin: 0 0 22px;
+}
+
+.chapter-content .chapter-ending {
+    margin: 30px 0 0;
+    padding: 18px 22px;
+    font-family: Orbitron, sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #ffffff;
+    text-align: left;
+    background: linear-gradient(
+        90deg,
+        #260b19,
+        #100913
+    );
+    border-left: 4px solid #e02250;
+    border-radius: 0 7px 7px 0;
+    text-shadow: 0 0 8px rgba(212, 20, 59, 0.3);
+}
+
+.chapter-navigation {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1050px;
+    margin: 30px auto 0;
+    padding-top: 25px;
+    border-top: 1px solid #68273b;
+}
+
+.chapter-navigation a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 22px;
+    font-family: Orbitron, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background: #63112c;
+    border: 1px solid #d4143b;
+    border-radius: 7px;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(212, 20, 59, 0.25);
+    transition:
+        background-color 0.3s,
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+.chapter-navigation a:hover {
+    background: #a0163f;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(212, 20, 59, 0.5);
+}
+
+.chapter-navigation a svg {
+    width: 22px;
+    height: 22px;
+}
+
+@media (max-width: 750px) {
+
+    .chapter-article {
+        padding: 25px 20px;
+    }
+
+    .chapter-heading h1 {
+        font-size: 29px;
+    }
+
+    .chapter-category {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .chapter-image img {
+        height: 220px;
+    }
+
+    .chapter-content {
+        margin-top: 25px;
+    }
+
+    .chapter-content p {
+        font-size: 20px;
+        line-height: 1.45;
+        margin-bottom: 20px;
+    }
+
+    .chapter-content .chapter-ending {
+        font-size: 17px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .chapter-article {
+        padding: 20px 12px;
+    }
+
+    .chapter-heading h1 {
+        font-size: 24px;
+    }
+
+    .chapter-heading h1::before {
+        margin-right: 8px;
+    }
+
+    .chapter-image img {
+        height: 180px;
+    }
+
+    .chapter-navigation a {
+        font-size: 12px;
+        padding: 12px 16px;
+    }
+}

@@ -159,6 +159,8 @@
     height: 100%;
     min-height: 165px;
     object-fit: cover;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .devlog-post-content {
@@ -193,6 +195,17 @@
     color: white;
     margin: 7px 0 10px;
     line-height: 1.1;
+}
+
+.devlog-post-content h2 a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.devlog-post-content h2 a:hover {
+    color: #ff1744;
+    text-shadow: 0 0 12px rgba(255, 23, 68, 0.6);
 }
 
 .devlog-post-content p {
@@ -256,7 +269,12 @@
 
 .devlog-post-extra a:hover {
     background-color: #d4143b;
-    transform: translateX(3px);
+    transform: scale(1.1);
+}
+
+.devlog-post-extra a svg {
+    width: 24px;
+    height: 24px;
 }
 
 .devlog-post-pending {

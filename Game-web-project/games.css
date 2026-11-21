@@ -114,6 +114,17 @@
     margin-bottom: 10px;
 }
 
+.catalog-game-info h2 a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.catalog-game-info h2 a:hover {
+    color: #ff1744;
+    text-shadow: 0 0 12px rgba(255, 23, 68, 0.6);
+}
+
 .catalog-game-info p {
     font-family: Rajdhani, sans-serif;
     font-size: 20px;

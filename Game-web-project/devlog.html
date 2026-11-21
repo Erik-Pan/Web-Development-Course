@@ -27,7 +27,7 @@
                     <li><a href="games.html">GAMES</a></li>
                     <li><a href="devlog.html" class="active">DEVLOG</a></li>
                     <li><a href="about-me.html">ABOUT ME</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -76,10 +76,12 @@
         </section>
         <section class="devlog-posts" aria-label="Devlog posts">
             <article class="devlog-post" data-category="updates web">
-                <img src="images/a-new-chapter.png" alt="Nordic mountains and northern lights">
+                <img src="images/new-chapter-logo.png" alt="Nordic mountains and northern lights">
                 <div class="devlog-post-content">
                     <time datetime="2026-10-27">27 OCTOBER 2026</time>
-                    <h2>A NEW CHAPTER BEGINS</h2>
+                    <h2>
+                        <a href="a-new-chapter.html">A NEW CHAPTER BEGINS</a>
+                    </h2>
                     <p>
                         A look back, new goals, and the start of a
                         new chapter for EK-Journey. What's next for
@@ -92,7 +94,14 @@
                         <span>UPDATE</span>
                     </div>
                     <a href="a-new-chapter.html" aria-label="Read A New Chapter Begins">
-                        &rarr;
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
+                                clip-rule="evenodd" />
+                        </svg>
                     </a>
                 </div>
             </article>
@@ -100,11 +109,6 @@
         <p class="devlog-empty" id="devlog-empty" hidden>
             No posts found. Try another search or category.
         </p>
-        <nav class="devlog-pagination" aria-label="Post pages">
-            <button type="button" id="devlog-prev" aria-label="Previous page">&larr;</button>
-            <div id="devlog-page-numbers"></div>
-            <button type="button" id="devlog-next" aria-label="Next page">&rarr;</button>
-        </nav>
     </main>
     <footer>
         <div class="footer-top">
