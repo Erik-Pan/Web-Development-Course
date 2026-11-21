@@ -38,22 +38,26 @@
             </svg>
             </button>
             <div class="language-switcher">
-                <button type="button" aria-label="Switch to English">
-                    <img src="images/gb.svg" alt="">
-                </button>
-                <button type="button" aria-label="Cambiar a español">
-                    <img src="images/es.svg" alt="">
-                </button>
-            </div>
+                <button type="button" data-lang="en" aria-label="Switch to English">
+                <img src="images/gb.svg" alt="">
+            </button>
+            <button type="button" data-lang="es" aria-label="Cambiar a español">
+                <img src="images/es.svg" alt="">
+            </button>
         </div>
+    </div>
     </header>
     <main>
         <section class="hero">
             <div>
                 <div>
-                    <h1>SMALL GAMES, BIG DREAMS</h1>
-                    <p>Welcome to EK-Journey, a little world of wonder and imagination. Here, I share my indie game development journey, my ideas, and everything I learn along the way.</p>
-                    <p>I want to create fun and engaging gaming experiences and bring immersive, unforgettable stories to life. Games made with heart and passion.</p>
+                    <h1 data-i18n="home.title">SMALL GAMES, BIG DREAMS</h1>
+                    <p data-i18n="home.intro">
+                        Welcome to EK-Journey, a little world of wonder and imagination. Here, I share my indie game development journey, my ideas, and everything I learn along the way.
+                    </p>
+                    <p data-i18n="home.goal">
+                        I want to create fun and engaging gaming experiences and bring immersive, unforgettable stories to life. Games made with heart and passion.
+                    </p>
                     <a href="a-new-chapter.html">READ MY STORY <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
                     <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg></a>
                 </div>
@@ -142,6 +146,7 @@
             <img src="../Icons/blender.svg" alt="Blender" width="50">
         </div>
     </footer>
-    <script src="game-web.js"></script>
+    <script src="language.js"></script>
+    <script src="game-web.js"></script> 
 </body>
 </html>

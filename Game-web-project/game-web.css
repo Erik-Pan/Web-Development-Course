@@ -235,6 +235,10 @@ header nav a.active {
     font-size: 36px;
 }
 
+html[lang="es"] .hero > div > div > h1 {
+    font-size: 30px;
+}
+
 .hero > div > div > p {
     font-family: Rajdhani;
     font-size: 20px;
