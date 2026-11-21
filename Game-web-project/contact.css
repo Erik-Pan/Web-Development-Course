@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
 .contact-page {
     width: 100%;
     margin: 15px 0 30px;
@@ -52,7 +54,7 @@
     font-size: 19px;
     line-height: 1.4;
     color: #dac8e2;
-    margin: 0 0 20px;
+    margin: 0 0 40px;
 }
 
 .contact-page .contact-details {
@@ -169,6 +171,91 @@
     background-repeat: no-repeat;
     border-radius: 8px;
     image-rendering: pixelated;
+    position: relative;
+}
+
+.contact-page .contact-illustration::after {
+    content: "";
+    position: absolute;
+    left: 48.5%;
+    top: 52.5%;
+    width: 19px;
+    height: 15px;
+    background: rgba(175, 255, 65, 0.45);
+    box-shadow:
+        0 0 0 2px rgba(170, 255, 65, 0.6),
+        0 0 0 4px rgba(150, 255, 50, 0.35),
+        0 0 0 6px rgba(130, 255, 40, 0.15);
+    transform: translate(-50%, -50%) rotate(15deg) skewX(-8deg);
+    pointer-events: none;
+    animation: gameboy-glow 3s steps(6) infinite;
+}
+
+.contact-page .sleep-pixels {
+    position: absolute;
+    left: 61%;
+    top: 63%;
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    color: #ddb4f5;
+    font-family: "Press Start 2P", monospace;
+    pointer-events: none;
+}
+
+.contact-page .sleep-pixels span {
+    display: inline-block;
+    opacity: 0;
+    animation: sleeping 4s ease-in-out infinite;
+}
+
+.contact-page .sleep-pixels span:nth-child(1) {
+    font-size: 14px;
+    animation-delay: 0s;
+}
+
+.contact-page .sleep-pixels span:nth-child(2) {
+    font-size: 18px;
+    animation-delay: 0.5s;
+}
+
+.contact-page .sleep-pixels span:nth-child(3) {
+    font-size: 22px;
+    animation-delay: 1s;
+}
+
+@keyframes gameboy-glow {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes sleeping {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    20% {
+        opacity: 0.9;
+    }
+
+    65% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-45px);
+    }
 }
 
 @media (max-width: 1050px) {
