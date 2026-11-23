@@ -19,15 +19,16 @@
             <img src="images/ek-logo.png" alt="Logo">
             <img src="images/ek-name.png" alt="Name">
             <img src="images/ek-slogan2.png" alt="Slogan">
+            <a href="game-web.html" class="header-home-link" aria-label="Go to homepage"></a>
         </div>
         <div>
             <nav>
                 <ul>
-                    <li><a href="game-web.html#home">HOME</a></li>
-                    <li><a href="games.html" class="active">GAMES</a></li>
-                    <li><a href="devlog.html">DEVLOG</a></li>
-                    <li><a href="about-me.html">ABOUT ME</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="game-web.html" data-i18n="nav.home">HOME</a></li>
+                    <li><a href="games.html" class="active" data-i18n="nav.games">GAMES</a></li>
+                    <li><a href="devlog.html" data-i18n="nav.devlog">DEVLOG</a></li>
+                    <li><a href="about-me.html" data-i18n="nav.about">ABOUT ME</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -39,10 +40,10 @@
                 </svg>
             </button>
             <div class="language-switcher">
-                <button type="button" aria-label="Switch to English">
+                <button type="button" data-lang="en" aria-label="Switch to English">
                     <img src="images/gb.svg" alt="">
                 </button>
-                <button type="button" aria-label="Cambiar a español">
+                <button type="button" data-lang="es" aria-label="Cambiar a español">
                     <img src="images/es.svg" alt="">
                 </button>
             </div>
@@ -51,9 +52,9 @@
     <main>
         <section class="games-catalog">
             <div class="games-catalog-heading">
-                <img class="games-banner-image" src="images/games-banner-bg.png" alt="">
-                <h1>GAMES</h1>
-                <p>Explore my projects with more detail.</p>
+                <img class="games-banner-image" src="images/games-banner-bg2.png" alt="">
+                <h1 data-i18n="nav.games">GAMES</h1>
+                <p data-i18n="games.intro">Explore my projects with more detail.</p>        
             </div>
             <article class="catalog-game">
                 <img src="images/ethereal-ascent-concept-art.png" alt="Ethereal Ascent">
@@ -70,7 +71,7 @@
             <article class="catalog-game">
                 <img src="images/space-call-concept-art.png" alt="Space Call">
                 <div class="catalog-game-info">
-                    <h2><a href="space-call.html">SPACE CALL (DEMO PROJECT)</a></h2>
+                    <h2><a href="space-call.html">SPACE CALL</a></h2>
                     <p>Sci-Fi Shooter</p>
                     <p>
                         <img src="images/windows-icon.png" alt="">
@@ -120,5 +121,6 @@
             <img src="../Icons/blender.svg" alt="Blender" width="50">
         </div>
     </footer>
+    <script src="language.js"></script>
 </body>
 </html>

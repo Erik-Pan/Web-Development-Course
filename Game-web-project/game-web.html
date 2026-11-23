@@ -6,9 +6,6 @@
     <link rel="stylesheet" href="game-web.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>EK-Journey</title>
 </head>
@@ -18,34 +15,35 @@
             <img src="images/ek-logo.png" alt="Logo">
             <img src="images/ek-name.png" alt="Name">
             <img src="images/ek-slogan2.png" alt="Slogan">
+            <a href="game-web.html" class="header-home-link" aria-label="Go to homepage"></a>
         </div>
         <div>
             <nav>
                 <ul>
-                    <li><a href="#home" class="active">HOME</a></li>
-                    <li><a href="games.html">GAMES</a></li>
-                    <li><a href="devlog.html">DEVLOG</a></li>
-                    <li><a href="about-me.html">ABOUT ME</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="#home" class="active" data-i18n="nav.home">HOME</a></li>
+                    <li><a href="games.html" data-i18n="nav.games">GAMES</a></li>
+                    <li><a href="devlog.html" data-i18n="nav.devlog">DEVLOG</a></li>
+                    <li><a href="about-me.html" data-i18n="nav.about">ABOUT ME</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
         <div class="header-actions">
             <button class="search-button" type="button" aria-label="Search">
-            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
-                <circle cx="11" cy="11" r="7" fill="none" stroke="white" stroke-width="2"></circle>
-                <line x1="16" y1="16" x2="21" y2="21" stroke="white" stroke-width="2"></line>
-            </svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7" fill="none" stroke="white" stroke-width="2"></circle>
+                    <line x1="16" y1="16" x2="21" y2="21" stroke="white" stroke-width="2"></line>
+                </svg>
             </button>
             <div class="language-switcher">
                 <button type="button" data-lang="en" aria-label="Switch to English">
-                <img src="images/gb.svg" alt="">
-            </button>
-            <button type="button" data-lang="es" aria-label="Cambiar a español">
-                <img src="images/es.svg" alt="">
-            </button>
+                    <img src="images/gb.svg" alt="">
+                </button>
+                <button type="button" data-lang="es" aria-label="Cambiar a español">
+                    <img src="images/es.svg" alt="">
+                </button>
+            </div>
         </div>
-    </div>
     </header>
     <main>
         <section class="hero">
@@ -58,64 +56,103 @@
                     <p data-i18n="home.goal">
                         I want to create fun and engaging gaming experiences and bring immersive, unforgettable stories to life. Games made with heart and passion.
                     </p>
-                    <a href="a-new-chapter.html">READ MY STORY <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                    <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg></a>
+                    <a href="a-new-chapter.html">
+                        <span data-i18n="home.story">READ MY STORY</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
                 </div>
-                    <img src="images/game-dream.png" alt="Retro game development studio">
-                    <span class="snow-window" aria-hidden="true"></span>
-                </div>
+                <img src="images/game-dream.png" alt="Retro game development studio">
+                <span class="snow-window" aria-hidden="true"></span>
+            </div>
         </section>
         <div class="content-grid">
             <section class="latest-posts">
                 <div>
-                    <h2>LATEST POSTS</h2>
-                    <a href="devlog.html">SEE ALL <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                    <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg></a>
+                    <h2 data-i18n="home.latest">LATEST POSTS</h2>
+                    <a href="devlog.html">
+                        <span data-i18n="home.seeAll">SEE ALL</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
                 </div>
                 <article class="post-card">
-                    <a href="a-new-chapter.html"><img src="images/ek-welcome.png" alt="Futuristic logo"></a>
+                    <a href="a-new-chapter.html">
+                        <img src="images/ek-welcome.png" alt="Futuristic logo">
+                    </a>
                     <div>
-                        <p>27 OCTOBER 2026</p>
-                        <h3><a href="a-new-chapter.html">A new chapter begins</a></h3>
-                        <p>Before you explore the rest of the website, I would like to introduce myself properly. Here you can learn a little more about me, EK-Journey, and what you can expect to find along the way.</p>
+                        <p data-i18n="home.postDate">27 OCTOBER 2026</p>
+                        <h3>
+                            <a href="a-new-chapter.html" data-i18n="home.postTitle">A new chapter begins</a>
+                        </h3>
+                        <p data-i18n="home.postDescription">
+                            Before you explore the rest of the website, I would like to introduce myself properly. Here you can learn a little more about me, EK-Journey, and what you can expect to find along the way.
+                        </p>
                     </div>
                 </article>
                 <figure class="posts-placeholder">
                     <img src="images/ek-more-posts.png" alt="">
-                    <span class="typing-text">More stories in the making...</span>
+                    <span class="typing-text" data-i18n="home.morePosts">More stories in the making...</span>
                 </figure>
             </section>
             <section class="games" id="games">
                 <div>
-                    <h2>GAMES</h2>
-                    <a href="games.html">SEE ALL<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                    <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg></a>
+                    <h2 data-i18n="nav.games">GAMES</h2>
+                    <a href="games.html">
+                        <span data-i18n="home.seeAll">SEE ALL</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
                 </div>
                 <article class="game-card">
-                    <a href="ethereal-ascent.html"><img src="images/ethereal-ascent-concept-art.png" alt="Ethereal Ascent"></a>
+                    <a href="ethereal-ascent.html">
+                        <img src="images/ethereal-ascent-concept-art.png" alt="Ethereal Ascent">
+                    </a>
                     <div>
-                        <h3><a href="ethereal-ascent.html">ETHEREAL ASCENT (DEMO PROJECT)</a></h3>
-                        <p>Survival horror / Horror adventure</p>
-                        <p>PC / Windows</p><img src="images/windows-icon.png" alt="">
-                        <p>Henry Blood travels to a supernatural world by performing a ritual looking for his deceased wife to bring her back.</p>
+                        <h3>
+                            <a href="ethereal-ascent.html" data-i18n="home.etherealTitle">ETHEREAL ASCENT (DEMO PROJECT)</a>
+                        </h3>
+                        <p data-i18n="home.etherealGenre">Survival horror / Horror adventure</p>
+                        <p>PC / Windows</p>
+                        <img src="images/windows-icon.png" alt="">
+                        <p data-i18n="home.etherealDescription">
+                            Henry Blood travels to a supernatural world by performing a ritual looking for his deceased wife to bring her back.
+                        </p>
                     </div>
                 </article>
                 <article class="game-card">
-                    <a href="space-call.html"><img src="images/space-call-concept-art.png" alt="Space Call"></a>
+                    <a href="space-call.html">
+                        <img src="images/space-call-concept-art.png" alt="Space Call">
+                    </a>
                     <div>
-                        <h3><a href="space-call.html">SPACE CALL (DEMO PROJECT)</a></h3>
-                        <p>Sci-Fi Shooter</p>
-                        <p>PC / Windows</p> <img src="images/windows-icon.png" alt="" width="20">
-                        <p>A space station has been attacked by waves of enemies which want to destroy its core.</p>
+                        <h3>
+                            <a href="space-call.html" data-i18n="home.spaceTitle">SPACE CALL</a>
+                        </h3>
+                        <p data-i18n="home.spaceGenre">Sci-Fi Shooter</p>
+                        <p>PC / Windows</p>
+                        <img src="images/windows-icon.png" alt="" width="20">
+                        <p data-i18n="home.spaceDescription">
+                            A space station has been attacked by waves of enemies which want to destroy its core.
+                        </p>
                     </div>
                 </article>
                 <article class="game-card">
-                    <a href="john-lemon.html"><img src="images/johnlemon-concept-art.png" alt="John Lemon's Haunted Jaunt"></a>
+                    <a href="john-lemon.html">
+                        <img src="images/johnlemon-concept-art.png" alt="John Lemon's Haunted Jaunt">
+                    </a>
                     <div>
-                        <h3><a href="john-lemon.html">JOHN LEMON'S HAUNTED JAUNT</a></h3>
-                        <p>Adventure</p>
-                        <p>PC / Windows</p> <img src="images/windows-icon.png" alt="" width="20">
-                        <p>My first practice project made with Unity's assets. John Lemon must escape from a haunted house.</p>
+                        <h3>
+                            <a href="john-lemon.html">JOHN LEMON'S HAUNTED JAUNT</a>
+                        </h3>
+                        <p data-i18n="home.lemonGenre">Adventure</p>
+                        <p>PC / Windows</p>
+                        <img src="images/windows-icon.png" alt="" width="20">
+                        <p data-i18n="home.lemonDescription">
+                            My first practice project made with Unity's assets. John Lemon must escape from a haunted house.
+                        </p>
                     </div>
                 </article>
             </section>
@@ -124,7 +161,7 @@
     <footer>
         <div class="footer-top">
             <img src="images/ek-journey-logo.png" alt="EK Journey" width="100">
-            <p>Games &middot; Code &middot; Learning &middot; Goals</p>
+            <p data-i18n="footer.tagline">Games &middot; Code &middot; Learning &middot; Goals</p>
             <ul>
                 <li><a href=""><img src="../Icons/facebook.svg" alt="Facebook"></a></li>
                 <li><a href=""><img src="../Icons/youtube.svg" alt="Youtube"></a></li>
@@ -132,10 +169,12 @@
                 <li><a href=""><img src="../Icons/linkedin.svg" alt="Linkedin"></a></li>
             </ul>
             <form action="">
-                <p>SUBSCRIBE</p>
-                <input type="email" placeholder="Your mail..." required>
-                <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                    <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
+                <p data-i18n="footer.subscribe">SUBSCRIBE</p>
+                <input type="email" placeholder="Your mail..." data-i18n-placeholder="footer.email" required>
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                    </svg>
                 </button>
             </form>
         </div>
@@ -147,6 +186,6 @@
         </div>
     </footer>
     <script src="language.js"></script>
-    <script src="game-web.js"></script> 
+    <script src="game-web.js"></script>
 </body>
 </html>
