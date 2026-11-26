@@ -186,6 +186,7 @@
         min-width: 0;
         width: 100%;
     }
+    
 }
 
 @media (min-width: 1200px) {
@@ -333,8 +334,6 @@
     .post-card > div > h3 {
         margin-left: 0;
     }
-
-    /* FOOTER */
 
     .footer-top {
         grid-template-columns: minmax(0, 1fr);

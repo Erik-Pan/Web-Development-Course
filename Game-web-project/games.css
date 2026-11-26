@@ -220,3 +220,33 @@
 .catalog-game > a:hover {
     background-color: rgba(168, 64, 166, 0.70);
 }
+
+@media (min-width: 950px) and (max-width: 1050px) {
+
+    header > div:first-child {
+        transform: translateX(18px);
+    }
+
+    .header-actions {
+        transform: translateX(-18px);
+    }
+
+}
+
+@media (max-width: 699px) {
+
+    .catalog-game {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 15px;
+    }
+
+    .catalog-game > img {
+        max-width: 260px;
+        justify-self: center;
+    }
+
+    .catalog-game > a {
+        justify-self: center;
+    }
+
+}
