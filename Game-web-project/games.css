@@ -83,8 +83,8 @@
         linear-gradient(
             to right,
             transparent 0%,
-            black 6%,
-            black 94%,
+            black 4%,
+            black 96%,
             transparent 100%
         );
     mask-composite: intersect;
