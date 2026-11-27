@@ -153,7 +153,14 @@
     box-shadow: 0 0 15px rgba(212, 20, 59, 0.4);
 }
 
-.devlog-post > img {
+.devlog-post > .devlog-post-image {
+    display: block;
+    width: 100%;
+    min-width: 0;
+}
+
+.devlog-post > 
+.devlog-post-image > img {
     display: block;
     width: 100%;
     height: 100%;
@@ -351,7 +358,8 @@
         flex-direction: column;
     }
 
-    .devlog-post > img {
+    .devlog-post > 
+    .devlog-post-image > img {
         height: 180px;
         min-height: 0;
     }
