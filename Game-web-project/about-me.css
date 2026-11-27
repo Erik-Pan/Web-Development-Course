@@ -354,7 +354,8 @@
 @media (max-width: 750px) {
 
     .about-page .about-hero {
-        min-height: 210px;
+        height: clamp(150px, 30vw, 190px);
+        min-height: 0;
         padding: 30px 25px;
     }
 
