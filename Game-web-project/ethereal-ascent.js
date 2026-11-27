@@ -35,6 +35,12 @@ closeButton.addEventListener("click", function () {
     lightbox.close();
 });
 
+lightbox.addEventListener("click", function (event) {
+    if (event.target === lightbox) {
+        lightbox.close();
+    }
+});
+
 const lightboxPrevButton = document.querySelector(".gallery-lightbox-prev");
 const lightboxNextButton = document.querySelector(".gallery-lightbox-next");
 function changeLightboxScreenshot(direction) {

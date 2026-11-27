@@ -177,7 +177,6 @@
 
 .detail-item:first-of-type p {
     font-size: 17px;
-    white-space: nowrap;
 }
 
 .john-lemon-details p:last-child {
@@ -414,7 +413,6 @@
     }
 
     .john-lemon-hero > img {
-        opacity: 0.55;
         width: 100%;
     }
 
@@ -430,7 +428,8 @@
 
 @media (max-width: 600px) {
     .john-lemon-hero {
-        min-height: 300px;
+        height: clamp(170px, 40vw, 280px);
+        min-height: 0;
     }
 
     .john-lemon-hero > div {
@@ -459,6 +458,26 @@
         font-size: 22px;
         padding: 12px 22px;
     }
+}
 
+@media (min-width: 950px) and (max-width: 1050px) {
 
+    header > div:first-child {
+        transform: translateX(18px);
+    }
+
+    .header-actions {
+        transform: translateX(-18px);
+    }
+}
+
+@media (max-width: 699px) {
+
+    .john-lemon-gallery-grid {
+        padding: 0;
+    }
+
+    .john-lemon-gallery-grid img {
+        flex: 0 0 100%;
+    }
 }

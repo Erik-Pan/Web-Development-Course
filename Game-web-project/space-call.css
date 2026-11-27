@@ -178,7 +178,6 @@
 
 .detail-item:first-of-type p {
     font-size: 17px;
-    white-space: nowrap;
 }
 
 .space-call-details p:last-child {
@@ -415,7 +414,6 @@
     }
 
     .space-call-hero > img {
-        opacity: 0.55;
         width: 100%;
     }
 
@@ -460,6 +458,42 @@
         font-size: 22px;
         padding: 12px 22px;
     }
+}
 
+@media (min-width: 950px) and (max-width: 1050px) {
 
+    header > div:first-child {
+        transform: translateX(18px);
+    }
+
+    .header-actions {
+        transform: translateX(-18px);
+    }
+}
+
+@media (max-width: 699px) {
+
+    .space-call-gallery-grid {
+        padding: 0;
+    }
+
+    .space-call-gallery-grid img {
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width: 699px) {
+
+    .space-call-hero {
+        height: clamp(170px, 40vw, 280px);
+        min-height: 0;
+    }
+
+    .space-call-hero > img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 5% center;
+    }
 }
